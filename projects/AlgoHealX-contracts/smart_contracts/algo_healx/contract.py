@@ -11,3 +11,15 @@ class AlgoHealx(ARC4Contract):
     manufacturer_count: UInt64
     manufacturers: BoxMap[UInt64, Account]
     batches: BoxMap[UInt64, String]
+    def _init_(self) -> None:
+        self.manufacturers = BoxMap(UInt64, Account, key_prefix=b"manu_")
+        self.batches = BoxMap(UInt64, String, key_prefix=b"batch_")
+        self.batch_count = UInt64(0)
+        self.manufacturer_count = UInt64(0)
+
+
+ 
+
+
+
+
