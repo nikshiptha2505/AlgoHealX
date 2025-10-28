@@ -52,6 +52,10 @@ class AlgoHealx(ARC4Contract):
                 return UInt64(1)
             i = i + UInt64(1)
         return UInt64(0)
+    @abimethod(readonly=True)
+    def get_batch_details(self, index: UInt64) -> String:
+        assert index < self.batch_count, "Invalid index"
+        return self.batches.get(index, default=String(""))
 
 
 
