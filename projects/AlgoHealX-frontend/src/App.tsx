@@ -1,56 +1,40 @@
-import { SupportedWallet, WalletId, WalletManager, WalletProvider } from '@txnlab/use-wallet-react'
-import { SnackbarProvider } from 'notistack'
-import Home from './Home'
-import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { WalletProvider } from "@/contexts/WalletContext";
+import Navbar from "@/components/Navbar";
+import Home from "./pages/Home";
+import Producer from "./pages/Producer";
+import Regulator from "./pages/Regulator";
+import Distributor from "./pages/Distributor";
+import Verify from "./pages/Verify";
+import NotFound from "./pages/NotFound";
 
-let supportedWallets: SupportedWallet[]
-if (import.meta.env.VITE_ALGOD_NETWORK === 'localnet') {
-  const kmdConfig = getKmdConfigFromViteEnvironment()
-  supportedWallets = [
-    {
-      id: WalletId.KMD,
-      options: {
-        baseServer: kmdConfig.server,
-        token: String(kmdConfig.token),
-        port: String(kmdConfig.port),
-      },
-    },
-  ]
-} else {
-  supportedWallets = [
-    { id: WalletId.DEFLY },
-    { id: WalletId.PERA },
-    { id: WalletId.EXODUS },
-    // If you are interested in WalletConnect v2 provider
-    // refer to https://github.com/TxnLab/use-wallet for detailed integration instructions
-  ]
-}
+const queryClient = new QueryClient();
 
-export default function App() {
-  const algodConfig = getAlgodConfigFromViteEnvironment()
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <WalletProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/producer" element={<Producer />} />
+            <Route path="/regulator" element={<Regulator />} />
+            <Route path="/distributor" element={<Distributor />} />
+            <Route path="/verify" element={<Verify />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </WalletProvider>
+  </QueryClientProvider>
+);
 
-  const walletManager = new WalletManager({
-    wallets: supportedWallets,
-    defaultNetwork: algodConfig.network,
-    networks: {
-      [algodConfig.network]: {
-        algod: {
-          baseServer: algodConfig.server,
-          port: algodConfig.port,
-          token: String(algodConfig.token),
-        },
-      },
-    },
-    options: {
-      resetNetwork: true,
-    },
-  })
-
-  return (
-    <SnackbarProvider maxSnack={3}>
-      <WalletProvider manager={walletManager}>
-        <Home />
-      </WalletProvider>
-    </SnackbarProvider>
-  )
-}
+export default App;

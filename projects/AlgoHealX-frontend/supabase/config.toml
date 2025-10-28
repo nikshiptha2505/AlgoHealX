@@ -1,0 +1,13 @@
+project_id = "xlcrayoadgnrdxfebitx"
+
+[functions.register-medicine]
+verify_jwt = false
+
+[functions.verify-medicine]
+verify_jwt = false
+
+[functions.track-transfer]
+verify_jwt = true
+
+[functions.approve-medicine]
+verify_jwt = true
