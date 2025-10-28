@@ -32,6 +32,13 @@ class AlgoHealx(ARC4Contract):
         self.manufacturer_count = self.manufacturer_count + UInt64(1)
 
 
+    @abimethod()
+    def register_batch(self, batch_details: String) -> None:
+        assert self._is_sender_manufacturer() == UInt64(1), "Not whitelisted"
+        idx: UInt64 = self.batch_count
+        assert idx < UInt64(MAX_BATCHES), "Batch limit reached"
+        self.batches[idx] = batch_details
+        self.batch_count = self.batch_count + UInt64(1)
 
  
 
