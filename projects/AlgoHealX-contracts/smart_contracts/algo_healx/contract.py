@@ -23,6 +23,13 @@ class AlgoHealx(ARC4Contract):
         self.batch_count = UInt64(0)
         self.manufacturer_count = UInt64(0)
 
+    @abimethod()
+    def add_manufacturer(self, manufacturer_addr: Account) -> None:
+        assert self.manufacturer_count < UInt64(MAX_MANUFACTURERS), "Whitelist full"
+        assert Txn.sender == self.owner, "Unauthorized"
+        idx = self.manufacturer_count
+        self.manufacturers[idx] = manufacturer_addr
+        self.manufacturer_count = self.manufacturer_count + UInt64(1)
 
 
 
