@@ -16,6 +16,14 @@ class AlgoHealx(ARC4Contract):
         self.batches = BoxMap(UInt64, String, key_prefix=b"batch_")
         self.batch_count = UInt64(0)
         self.manufacturer_count = UInt64(0)
+    @abimethod(allow_actions=["NoOp"], create="require")
+    def create_application(self, owner_addr: Account, government_addr: Account) -> None:
+        self.owner = owner_addr
+        self.government_address = government_addr
+        self.batch_count = UInt64(0)
+        self.manufacturer_count = UInt64(0)
+
+
 
 
  
