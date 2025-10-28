@@ -40,7 +40,20 @@ class AlgoHealx(ARC4Contract):
         self.batches[idx] = batch_details
         self.batch_count = self.batch_count + UInt64(1)
 
- 
+     @subroutine
+    def _is_sender_manufacturer(self) -> UInt64:
+        i: UInt64 = UInt64(0)
+        while i < self.manufacturer_count:
+            m = self.manufacturers.get(
+                i,
+                default=Account("WMHF4FLJNKY2BPFK7YPV5ID6OZ7LVDB2B66ZTXEAMLL2NX4WJZRJFVX66M")
+            )
+            if Txn.sender == m:
+                return UInt64(1)
+            i = i + UInt64(1)
+        return UInt64(0)
+
+
 
 
 
