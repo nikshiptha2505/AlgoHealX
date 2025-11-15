@@ -112,3 +112,8 @@ class DrugBatchContract(ARC4Contract):
         self.status = String("counterfeit")
         self.last_verif_ts = Global.latest_timestamp
 
+    @arc4.abimethod
+    def update_quantity(self, new_quantity: UInt64) -> None:
+        assert Txn.sender == self.producer or Txn.sender == self.admin
+        self.quantity = new_quantity
+        self.timestamp = Global.latest_timestamp
