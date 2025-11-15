@@ -100,3 +100,8 @@ class DrugBatchContract(ARC4Contract):
         assert Txn.sender == self.producer or Txn.sender == self.admin
         self.qr_hash = qr_hash
         self.last_verif_ts = Global.latest_timestamp
+    @arc4.abimethod
+    def verify(self, qr_hash: Bytes) -> None:
+        assert qr_hash == self.qr_hash
+        self.verif_count += UInt64(1)
+        self.last_verif_ts = Global.latest_timestamp
