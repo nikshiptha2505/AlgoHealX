@@ -95,3 +95,8 @@ class DrugBatchContract(ARC4Contract):
         assert Txn.sender == self.receiver or Txn.sender == self.admin
         self.status = String("delivered")
         self.last_transfer_ts = Global.latest_timestamp
+    @arc4.abimethod
+    def set_qr(self, qr_hash: Bytes) -> None:
+        assert Txn.sender == self.producer or Txn.sender == self.admin
+        self.qr_hash = qr_hash
+        self.last_verif_ts = Global.latest_timestamp
