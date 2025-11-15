@@ -68,4 +68,11 @@ class DrugBatchContract(ARC4Contract):
         self.approval_ts = Global.latest_timestamp
         self.status = String("approved")
 
+    @arc4.abimethod
+    def reject(self, reason_text: String) -> None:
+        assert Txn.sender == self.regulator
+        self.reg_status = String("rejected")
+        self.rej_reason = reason_text
+        self.approval_ts = Global.latest_timestamp
+        self.status = String("rejected")
 
