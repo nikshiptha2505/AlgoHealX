@@ -26,3 +26,11 @@ class DrugBatchContract(ARC4Contract):
         self.is_authentic = UInt64(1)
         self.last_verif_ts = UInt64()
         self.qr_hash = Bytes()
+
+    @arc4.abimethod
+    def set_regulator(self, regulator_addr: Account) -> None:
+        assert Txn.sender == self.admin
+        self.regulator = regulator_addr
+        self.reg_status = String("pending")
+        self.approval_ts = Global.latest_timestamp
+
