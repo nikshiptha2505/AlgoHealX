@@ -33,4 +33,25 @@ class DrugBatchContract(ARC4Contract):
         self.regulator = regulator_addr
         self.reg_status = String("pending")
         self.approval_ts = Global.latest_timestamp
-
+    @arc4.abimethod
+    def register(
+        self,
+        batch_id: String,
+        drug_name: String,
+        manufacturer: String,
+        manufacture_date: String,
+        expiry_date: String,
+        quantity: UInt64,
+    ) -> None:
+        if self.producer == Account():
+            self.producer = Txn.sender
+        else:
+            assert Txn.sender == self.producer
+        self.batch_id = batch_id
+        self.drug_name = drug_name
+        self.manufacturer = manufacturer
+        self.manufacture_date = manufacture_date
+        self.expiry_date = expiry_date
+        self.quantity = quantity
+        self.status = String("pending")
+        self.timestamp = Global.latest_timestamp
