@@ -7,6 +7,8 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Package, QrCode as QrCodeIcon, Loader2 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
+import algosdk from 'algosdk';
+import { getAlgodClient, waitForConfirmation } from '@/lib/algorand';
 
 interface MedicineBatch {
   drugName: string;
@@ -18,7 +20,7 @@ interface MedicineBatch {
 }
 
 const Producer = () => {
-  const { accountAddress, isConnected } = useWallet();
+  const { accountAddress, isConnected, walletInstance, activeWallet } = useWallet();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [qrCodeData, setQrCodeData] = useState<string | null>(null);
@@ -43,8 +45,8 @@ const Producer = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!isConnected || !accountAddress) {
+
+    if (!isConnected || !accountAddress || !walletInstance) {
       toast({
         title: 'Wallet Not Connected',
         description: 'Please connect your wallet to register a batch',
@@ -59,25 +61,101 @@ const Producer = () => {
     setAppId(null);
 
     try {
-      // Call backend function to register medicine
-      const { data, error } = await supabase.functions.invoke('register-medicine', {
-        body: {
-          batchId: formData.batchId,
-          drugName: formData.drugName,
-          manufacturer: formData.manufacturer,
-          manufactureDate: formData.manufactureDate,
-          expiryDate: formData.expiryDate,
-          quantity: formData.quantity,
-          producerWallet: accountAddress,
-        },
+      // Step 1: Create and send payment transaction (0.02 Algos fee)
+      const algodClient = new algosdk.Algodv2(
+        "",
+        "https://testnet-api.algonode.cloud",
+        ""
+      );
+      const params = await algodClient.getTransactionParams().do();
+
+      // 0.02 Algos = 20,000 microAlgos
+      const paymentTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+        sender: accountAddress!,
+        receiver: accountAddress!, // Sending to self as a registration fee
+        amount: 20000,
+        suggestedParams: params,
+        note: new Uint8Array(
+          Buffer.from(`Medicine Registration: ${formData.batchId}`)
+        ),
+      });
+      console.log("flag 1");
+
+      let signedTxn;
+      // Sign transaction based on wallet type
+      if (walletInstance.signTransactions) {
+        // Lute wallet API - expects array of transactions
+        const signedTxns = await walletInstance.signTransactions([
+          [{ txn: paymentTxn }],
+        ]);
+        signedTxn = signedTxns[0];
+      } else if (walletInstance.signTransaction) {
+        // Pera/Defly wallet API - expects grouped transactions
+        const signedTxns = await walletInstance.signTransaction([
+          [{ txn: paymentTxn }],
+        ]);
+        signedTxn = signedTxns[0];
+      } else {
+        throw new Error("Wallet does not support transaction signing");
+      }
+      console.log("flag2");
+      // Send transaction
+      const txResponse = await algodClient.sendRawTransaction(signedTxn).do();
+      const txId = txResponse.txid;
+      console.log("Transaction sent with ID:", txId);
+
+      // Wait for confirmation with increased rounds and better error handling
+      try {
+        const maxRoundsToWait = 10; // Increased from default 4-5 to 10 rounds
+        const confirmedTxn = await algosdk.waitForConfirmation(
+          algodClient,
+          txId,
+          maxRoundsToWait
+        );
+        console.log(
+          "Payment transaction confirmed in round:",
+          confirmedTxn["confirmed-round"]
+        );
+        console.log("Transaction ID:", txId);
+        console.log("Check your transaction at: https://lora.algokit.io/testnet/transaction/" + txId);
+      } catch (error) {
+        console.error("Transaction confirmation error:", error);
+        console.error("Transaction ID:", txId);
+        console.error(
+          "Check your transaction at: https://lora.algokit.io/testnet/transaction/" + txId
+        );
+        throw new Error(
+          `Transaction ${txId} not confirmed after ${10} rounds. Check the explorer link above for details.`
+        );
+      }
+      toast({
+        title: "Payment Confirmed",
+        description: "0.02 Algos registration fee paid successfully",
       });
 
+      // Step 2: Call backend function to register medicine
+      const { data, error } = await supabase.functions.invoke(
+        "register-medicine",
+        {
+          body: {
+            batchId: formData.batchId,
+            drugName: formData.drugName,
+            manufacturer: formData.manufacturer,
+            manufactureDate: formData.manufactureDate,
+            expiryDate: formData.expiryDate,
+            quantity: formData.quantity,
+            producerWallet: accountAddress,
+            paymentTxId: txId,
+          },
+        }
+      );
+
       if (error) {
-        console.error('Backend error:', error);
+        console.error("Backend error:", error);
         throw error;
       }
 
-      console.log('Registration response:', data);
+      console.log("Registration response:", data);
 
       if (data.qrCodeImage) {
         setQrCodeData(data.qrCodeImage);
@@ -90,18 +168,18 @@ const Producer = () => {
       }
 
       toast({
-        title: 'Batch Registered Successfully',
+        title: "Batch Registered Successfully",
         description: `Batch ${formData.batchId} has been recorded on the blockchain`,
       });
 
       // Reset form
       setFormData({
-        drugName: '',
-        batchId: '',
-        manufacturer: '',
-        manufactureDate: '',
-        expiryDate: '',
-        quantity: '',
+        drugName: "",
+        batchId: "",
+        manufacturer: "",
+        manufactureDate: "",
+        expiryDate: "",
+        quantity: "",
       });
     } catch (error) {
       console.error('Registration error:', error);

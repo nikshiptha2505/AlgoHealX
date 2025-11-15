@@ -1,0 +1,6226 @@
+{
+  "version": 3,
+  "sources": [
+    "../../algo_healx/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAGQ;AAAa;;AAAb;AACA;AAAgB;;AAAhB;AACA;;AAAiB;;AAAjB;AACA;;AAAgB;AAAhB;AACA;;AAAiB;AAAjB;AACA;;AAAoB;AAApB;AACA;;AAAwB;AAAxB;AACA;;AAAmB;AAAnB;AACA;;AAAgB;AAAhB;AACA;AAAc;;;;;;;;;;;;;;AAAd;AACA;;AAAiB;AAAjB;AACA;;AAAkB;;AAAlB;AACA;;AAAkB;AAAlB;AACA;;AAAwB;AAAxB;AACA;;AAAmB;AAAnB;AACA;;AAAc;;AAAd;AACA;;AAAgB;;AAAhB;AACA;;AAAwB;AAAxB;AACA;;AAAsB;AAAtB;AACA;;AAAwB;AAAxB;AACA;;AAAmB;AAAnB;AACA;;AAAoB;AAApB;AACA;;AAAqB;AAArB;AACA;;AAAe;AAAf;AAzBR;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAoIK;AAAA;AAJA;AAAA;AAJA;AAAA;;;;;;;;;AAjGA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAEU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAP;AACA;;AAAA;AAAA;AACA;;AAAkB;;AAAlB;AACA;;AAAmB;;AAAnB;AALH;AAAA;AAOA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAUM;AAAA;AAAA;AAAA;AAAiB;;AAAjB;AAAX;;;AACY;AAAgB;;AAAhB;AAGJ;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;AAAc;;AAAd;AACA;;AAAiB;;AAAjB;AArBH;AAAA;AAac;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAP;;;;AAUP;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;;AAA4B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA5B;;;AAA2D;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAA3D;;;;AAAP;AACA;AAAA;;AAAA;AACA;;AAAiB;;AAAjB;AAJH;AAAA;;;;;AAMA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEU;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAAP;AACA;;AAAkB;;AAAlB;AACA;;AAAA;AAAA;AACA;;AAAmB;;AAAnB;AACA;AAAc;;AAAd;AANH;AAAA;AAQA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEU;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAAP;AACA;;AAAkB;;AAAlB;AACA;;AAAA;AAAA;AACA;;AAAmB;;AAAnB;AACA;AAAc;;AAAd;AANH;AAAA;AAQA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEM;AAAA;;AAAA;AAAA;AAAX;;;AACmB;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;;AAA+B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA/B;;;;AAAP;AACc;AAAA;AAAA;AAAA;AAAd;;AAAA;AAAA;AAIJ;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;AAAA;;AAAA;AAAA;AAAuB;AAAvB;AAAA;;AAAA;AAAA;AACA;;AAAwB;;AAAxB;AACA;AAAc;;;;;;;;;;;;AAAd;AAZH;AAAA;;;;;AAMc;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAAA;;;AAA6B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA7B;;;;AAAP;AACc;AAAA;;AAAA;AAAA;AAAd;;AAAA;AAAA;;;;;;;;AASG;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAAA;;;AAA+B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA/B;;;;AAAP;AACA;AAAc;;;;;;;;;;;AAAd;AACA;;AAAwB;;AAAxB;AAJH;AAAA;;;;;AAMA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;;AAA+B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA/B;;;;AAAP;AACA;;AAAA;;AAAA;AACA;;AAAqB;;AAArB;AAJH;AAAA;;;;;AAMA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEqB;AAAA;;AAAA;AAAA;AAAX;AAAP;AACA;AAAA;;AAAA;AAAA;AAAoB;AAApB;AAAA;;AAAA;AAAA;AACA;;AAAqB;;AAArB;AAJH;AAAA;AAQU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;;AAA4B;;AAAc;AAAA;;AAAA;AAAA;AAAd;AAA5B;;;;AAAP;AACA;;AAAoB;AAApB;AACA;AAAc;;;;;;;;;;;;;AAAd;AACA;;AAAqB;;AAArB;AALH;AAAA;;;;;AAOA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEU;;AAAc;AAAA;AAAA;AAAA;AAAd;AAAA;;;AAA+B;;AAAc;AAAA;AAAA;AAAA;AAAd;AAA/B;;;;AAAP;AACA;;AAAA;;AAAA;AACA;;AAAiB;;AAAjB;AAJH;AAAA;;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 2 8"
+    },
+    "7": {
+      "op": "bytecblock \"admin\" \"producer\" 0x \"status\" \"regulator\" \"timestamp\" \"reg_status\" \"approval_ts\" \"sender\" \"receiver\" \"transfer_count\" \"last_verif_ts\" \"quantity\" \"pending\" \"last_transfer_ts\" \"verif_count\" \"qr_hash\" \"batch_id\" \"drug_name\" \"manufacturer\" \"manufacture_date\" \"expiry_date\" \"rej_reason\" \"compliance_score\" \"current_location\" \"is_authentic\" \"approved\" \"rejected\""
+    },
+    "311": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "313": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "316": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\""
+      ],
+      "stack_out": [
+        "\"admin\""
+      ]
+    },
+    "317": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "\"admin\"",
+        "tmp%0#2"
+      ],
+      "stack_out": [
+        "\"admin\"",
+        "tmp%0#2"
+      ]
+    },
+    "319": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "320": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\""
+      ],
+      "stack_out": [
+        "\"producer\""
+      ]
+    },
+    "321": {
+      "op": "global ZeroAddress",
+      "defined_out": [
+        "\"producer\"",
+        "tmp%1#2"
+      ],
+      "stack_out": [
+        "\"producer\"",
+        "tmp%1#2"
+      ]
+    },
+    "323": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "324": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\""
+      ],
+      "stack_out": [
+        "\"regulator\""
+      ]
+    },
+    "326": {
+      "op": "global ZeroAddress",
+      "defined_out": [
+        "\"regulator\"",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "\"regulator\"",
+        "tmp%2#1"
+      ]
+    },
+    "328": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "329": {
+      "op": "bytec 17 // \"batch_id\"",
+      "defined_out": [
+        "\"batch_id\""
+      ],
+      "stack_out": [
+        "\"batch_id\""
+      ]
+    },
+    "331": {
+      "op": "bytec_2 // \"\"",
+      "defined_out": [
+        "\"\"",
+        "\"batch_id\""
+      ],
+      "stack_out": [
+        "\"batch_id\"",
+        "\"\""
+      ]
+    },
+    "332": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "333": {
+      "op": "bytec 18 // \"drug_name\"",
+      "defined_out": [
+        "\"drug_name\""
+      ],
+      "stack_out": [
+        "\"drug_name\""
+      ]
+    },
+    "335": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"drug_name\"",
+        "\"\""
+      ]
+    },
+    "336": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "337": {
+      "op": "bytec 19 // \"manufacturer\"",
+      "defined_out": [
+        "\"manufacturer\""
+      ],
+      "stack_out": [
+        "\"manufacturer\""
+      ]
+    },
+    "339": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"manufacturer\"",
+        "\"\""
+      ]
+    },
+    "340": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "341": {
+      "op": "bytec 20 // \"manufacture_date\"",
+      "defined_out": [
+        "\"manufacture_date\""
+      ],
+      "stack_out": [
+        "\"manufacture_date\""
+      ]
+    },
+    "343": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"manufacture_date\"",
+        "\"\""
+      ]
+    },
+    "344": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "345": {
+      "op": "bytec 21 // \"expiry_date\"",
+      "defined_out": [
+        "\"expiry_date\""
+      ],
+      "stack_out": [
+        "\"expiry_date\""
+      ]
+    },
+    "347": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"expiry_date\"",
+        "\"\""
+      ]
+    },
+    "348": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "349": {
+      "op": "bytec 12 // \"quantity\"",
+      "defined_out": [
+        "\"quantity\""
+      ],
+      "stack_out": [
+        "\"quantity\""
+      ]
+    },
+    "351": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"quantity\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"quantity\"",
+        "0"
+      ]
+    },
+    "352": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "353": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "354": {
+      "op": "pushbytes \"unregistered\"",
+      "defined_out": [
+        "\"status\"",
+        "\"unregistered\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"unregistered\""
+      ]
+    },
+    "368": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "369": {
+      "op": "bytec 5 // \"timestamp\"",
+      "defined_out": [
+        "\"timestamp\""
+      ],
+      "stack_out": [
+        "\"timestamp\""
+      ]
+    },
+    "371": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"timestamp\"",
+        "0"
+      ]
+    },
+    "372": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "373": {
+      "op": "bytec 6 // \"reg_status\"",
+      "defined_out": [
+        "\"reg_status\""
+      ],
+      "stack_out": [
+        "\"reg_status\""
+      ]
+    },
+    "375": {
+      "op": "bytec 13 // \"pending\"",
+      "defined_out": [
+        "\"pending\"",
+        "\"reg_status\""
+      ],
+      "stack_out": [
+        "\"reg_status\"",
+        "\"pending\""
+      ]
+    },
+    "377": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "378": {
+      "op": "bytec 22 // \"rej_reason\"",
+      "defined_out": [
+        "\"rej_reason\""
+      ],
+      "stack_out": [
+        "\"rej_reason\""
+      ]
+    },
+    "380": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"rej_reason\"",
+        "\"\""
+      ]
+    },
+    "381": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "382": {
+      "op": "bytec 23 // \"compliance_score\"",
+      "defined_out": [
+        "\"compliance_score\""
+      ],
+      "stack_out": [
+        "\"compliance_score\""
+      ]
+    },
+    "384": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"compliance_score\"",
+        "0"
+      ]
+    },
+    "385": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "386": {
+      "op": "bytec 7 // \"approval_ts\"",
+      "defined_out": [
+        "\"approval_ts\""
+      ],
+      "stack_out": [
+        "\"approval_ts\""
+      ]
+    },
+    "388": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"approval_ts\"",
+        "0"
+      ]
+    },
+    "389": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "390": {
+      "op": "bytec 8 // \"sender\"",
+      "defined_out": [
+        "\"sender\""
+      ],
+      "stack_out": [
+        "\"sender\""
+      ]
+    },
+    "392": {
+      "op": "global ZeroAddress",
+      "defined_out": [
+        "\"sender\"",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "\"sender\"",
+        "tmp%3#1"
+      ]
+    },
+    "394": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "395": {
+      "op": "bytec 9 // \"receiver\"",
+      "defined_out": [
+        "\"receiver\""
+      ],
+      "stack_out": [
+        "\"receiver\""
+      ]
+    },
+    "397": {
+      "op": "global ZeroAddress",
+      "defined_out": [
+        "\"receiver\"",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "\"receiver\"",
+        "tmp%4#1"
+      ]
+    },
+    "399": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "400": {
+      "op": "bytec 24 // \"current_location\"",
+      "defined_out": [
+        "\"current_location\""
+      ],
+      "stack_out": [
+        "\"current_location\""
+      ]
+    },
+    "402": {
+      "op": "bytec_2 // \"\"",
+      "stack_out": [
+        "\"current_location\"",
+        "\"\""
+      ]
+    },
+    "403": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "404": {
+      "op": "bytec 10 // \"transfer_count\"",
+      "defined_out": [
+        "\"transfer_count\""
+      ],
+      "stack_out": [
+        "\"transfer_count\""
+      ]
+    },
+    "406": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"transfer_count\"",
+        "0"
+      ]
+    },
+    "407": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "408": {
+      "op": "bytec 14 // \"last_transfer_ts\"",
+      "defined_out": [
+        "\"last_transfer_ts\""
+      ],
+      "stack_out": [
+        "\"last_transfer_ts\""
+      ]
+    },
+    "410": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"last_transfer_ts\"",
+        "0"
+      ]
+    },
+    "411": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "412": {
+      "op": "bytec 15 // \"verif_count\"",
+      "defined_out": [
+        "\"verif_count\""
+      ],
+      "stack_out": [
+        "\"verif_count\""
+      ]
+    },
+    "414": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"verif_count\"",
+        "0"
+      ]
+    },
+    "415": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "416": {
+      "op": "bytec 25 // \"is_authentic\"",
+      "defined_out": [
+        "\"is_authentic\""
+      ],
+      "stack_out": [
+        "\"is_authentic\""
+      ]
+    },
+    "418": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"is_authentic\"",
+        "1"
+      ],
+      "stack_out": [
+        "\"is_authentic\"",
+        "1"
+      ]
+    },
+    "419": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "420": {
+      "op": "bytec 11 // \"last_verif_ts\"",
+      "defined_out": [
+        "\"last_verif_ts\""
+      ],
+      "stack_out": [
+        "\"last_verif_ts\""
+      ]
+    },
+    "422": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"last_verif_ts\"",
+        "0"
+      ]
+    },
+    "423": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "424": {
+      "op": "bytec 16 // \"qr_hash\"",
+      "defined_out": [
+        "\"qr_hash\""
+      ],
+      "stack_out": [
+        "\"qr_hash\""
+      ]
+    },
+    "426": {
+      "op": "bytec_2 // 0x",
+      "defined_out": [
+        "\"qr_hash\"",
+        "0x"
+      ],
+      "stack_out": [
+        "\"qr_hash\"",
+        "0x"
+      ]
+    },
+    "427": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "428": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "430": {
+      "op": "bz main___algopy_default_create@23",
+      "stack_out": []
+    },
+    "433": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "435": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "436": {
+      "error": "OnCompletion must be NoOp",
+      "op": "assert // OnCompletion must be NoOp",
+      "stack_out": []
+    },
+    "437": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "439": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "440": {
+      "op": "pushbytess 0xbf746b78 0x1b6680da 0x475afff8 0xadd6306e 0xbcb210f6 0x77b09c7a 0x5e23d57e 0xfdae70a5 0x6fad87ed 0xa5b0d7b6 0x385bb9c9 0x63f02aea 0x008c069c 0x573fc5d7 // method \"set_regulator(address)void\", method \"register(string,string,string,string,string,uint64)void\", method \"update_status(string)void\", method \"approve(uint64)void\", method \"reject(string)void\", method \"transfer(address,string)void\", method \"mark_delivered()void\", method \"set_qr(byte[])void\", method \"verify(byte[])void\", method \"mark_counterfeit()void\", method \"update_quantity(uint64)void\", method \"get_info()void\", method \"get_status()void\", method \"get_history()void\"",
+      "defined_out": [
+        "Method(approve(uint64)void)",
+        "Method(get_history()void)",
+        "Method(get_info()void)",
+        "Method(get_status()void)",
+        "Method(mark_counterfeit()void)",
+        "Method(mark_delivered()void)",
+        "Method(register(string,string,string,string,string,uint64)void)",
+        "Method(reject(string)void)",
+        "Method(set_qr(byte[])void)",
+        "Method(set_regulator(address)void)",
+        "Method(transfer(address,string)void)",
+        "Method(update_quantity(uint64)void)",
+        "Method(update_status(string)void)",
+        "Method(verify(byte[])void)"
+      ],
+      "stack_out": [
+        "Method(set_regulator(address)void)",
+        "Method(register(string,string,string,string,string,uint64)void)",
+        "Method(update_status(string)void)",
+        "Method(approve(uint64)void)",
+        "Method(reject(string)void)",
+        "Method(transfer(address,string)void)",
+        "Method(mark_delivered()void)",
+        "Method(set_qr(byte[])void)",
+        "Method(verify(byte[])void)",
+        "Method(mark_counterfeit()void)",
+        "Method(update_quantity(uint64)void)",
+        "Method(get_info()void)",
+        "Method(get_status()void)",
+        "Method(get_history()void)"
+      ]
+    },
+    "512": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(approve(uint64)void)",
+        "Method(get_history()void)",
+        "Method(get_info()void)",
+        "Method(get_status()void)",
+        "Method(mark_counterfeit()void)",
+        "Method(mark_delivered()void)",
+        "Method(register(string,string,string,string,string,uint64)void)",
+        "Method(reject(string)void)",
+        "Method(set_qr(byte[])void)",
+        "Method(set_regulator(address)void)",
+        "Method(transfer(address,string)void)",
+        "Method(update_quantity(uint64)void)",
+        "Method(update_status(string)void)",
+        "Method(verify(byte[])void)",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "Method(set_regulator(address)void)",
+        "Method(register(string,string,string,string,string,uint64)void)",
+        "Method(update_status(string)void)",
+        "Method(approve(uint64)void)",
+        "Method(reject(string)void)",
+        "Method(transfer(address,string)void)",
+        "Method(mark_delivered()void)",
+        "Method(set_qr(byte[])void)",
+        "Method(verify(byte[])void)",
+        "Method(mark_counterfeit()void)",
+        "Method(update_quantity(uint64)void)",
+        "Method(get_info()void)",
+        "Method(get_status()void)",
+        "Method(get_history()void)",
+        "tmp%6#0"
+      ]
+    },
+    "515": {
+      "op": "match set_regulator register update_status approve reject transfer mark_delivered set_qr verify mark_counterfeit update_quantity main_get_info_route@17 main_get_status_route@18 main_get_history_route@19",
+      "stack_out": []
+    },
+    "545": {
+      "op": "err"
+    },
+    "546": {
+      "block": "main_get_history_route@19",
+      "stack_in": [],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "547": {
+      "op": "return",
+      "stack_out": []
+    },
+    "548": {
+      "block": "main_get_status_route@18",
+      "stack_in": [],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "549": {
+      "op": "return",
+      "stack_out": []
+    },
+    "550": {
+      "block": "main_get_info_route@17",
+      "stack_in": [],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "551": {
+      "op": "return",
+      "stack_out": []
+    },
+    "552": {
+      "block": "main___algopy_default_create@23",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "554": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "555": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "557": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "558": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "559": {
+      "error": "OnCompletion must be NoOp && can only call when creating",
+      "op": "return // on error: OnCompletion must be NoOp && can only call when creating",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "560": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.set_regulator[routing]",
+      "params": {},
+      "block": "set_regulator",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "regulator_addr#0"
+      ],
+      "stack_out": [
+        "regulator_addr#0"
+      ]
+    },
+    "563": {
+      "op": "dup",
+      "defined_out": [
+        "regulator_addr#0",
+        "regulator_addr#0 (copy)"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "regulator_addr#0 (copy)"
+      ]
+    },
+    "564": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "regulator_addr#0"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "len%0#0"
+      ]
+    },
+    "565": {
+      "op": "pushint 32 // 32",
+      "defined_out": [
+        "32",
+        "len%0#0",
+        "regulator_addr#0"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "len%0#0",
+        "32"
+      ]
+    },
+    "567": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "regulator_addr#0"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "eq%0#0"
+      ]
+    },
+    "568": {
+      "error": "invalid number of bytes for uint8[32]",
+      "op": "assert // invalid number of bytes for uint8[32]",
+      "stack_out": [
+        "regulator_addr#0"
+      ]
+    },
+    "569": {
+      "op": "txn Sender",
+      "defined_out": [
+        "regulator_addr#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%0#1"
+      ]
+    },
+    "571": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "regulator_addr#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "572": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "regulator_addr#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%0#1",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "573": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "regulator_addr#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "574": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "575": {
+      "op": "==",
+      "defined_out": [
+        "regulator_addr#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "tmp%1#1"
+      ]
+    },
+    "576": {
+      "op": "assert",
+      "stack_out": [
+        "regulator_addr#0"
+      ]
+    },
+    "577": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\"",
+        "regulator_addr#0"
+      ],
+      "stack_out": [
+        "regulator_addr#0",
+        "\"regulator\""
+      ]
+    },
+    "579": {
+      "op": "swap",
+      "stack_out": [
+        "\"regulator\"",
+        "regulator_addr#0"
+      ]
+    },
+    "580": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "581": {
+      "op": "bytec 6 // \"reg_status\"",
+      "defined_out": [
+        "\"reg_status\""
+      ],
+      "stack_out": [
+        "\"reg_status\""
+      ]
+    },
+    "583": {
+      "op": "bytec 13 // \"pending\"",
+      "defined_out": [
+        "\"pending\"",
+        "\"reg_status\""
+      ],
+      "stack_out": [
+        "\"reg_status\"",
+        "\"pending\""
+      ]
+    },
+    "585": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "586": {
+      "op": "bytec 7 // \"approval_ts\"",
+      "defined_out": [
+        "\"approval_ts\""
+      ],
+      "stack_out": [
+        "\"approval_ts\""
+      ]
+    },
+    "588": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ]
+    },
+    "590": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "591": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "592": {
+      "op": "return",
+      "stack_out": []
+    },
+    "593": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.register[routing]",
+      "params": {},
+      "block": "register",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "596": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "597": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "598": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "599": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "600": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "601": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "603": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "604": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "605": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "606": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "batch_id#0"
+      ],
+      "stack_out": [
+        "batch_id#0"
+      ]
+    },
+    "609": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "batch_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0"
+      ]
+    },
+    "612": {
+      "op": "dup",
+      "defined_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "613": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "0"
+      ]
+    },
+    "614": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%1#0",
+        "batch_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0"
+      ]
+    },
+    "615": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0",
+        "2"
+      ]
+    },
+    "616": {
+      "op": "+",
+      "defined_out": [
+        "add%1#0",
+        "batch_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "add%1#0"
+      ]
+    },
+    "617": {
+      "op": "dig 1",
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "add%1#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "619": {
+      "op": "len",
+      "defined_out": [
+        "add%1#0",
+        "batch_id#0",
+        "len%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "add%1#0",
+        "len%1#0"
+      ]
+    },
+    "620": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "eq%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0",
+        "eq%1#0"
+      ]
+    },
+    "621": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "batch_id#0",
+        "tmp%2#0"
+      ]
+    },
+    "622": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0"
+      ]
+    },
+    "625": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0"
+      ]
+    },
+    "628": {
+      "op": "dup",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "629": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)",
+        "0"
+      ]
+    },
+    "630": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%2#0",
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0"
+      ]
+    },
+    "631": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0",
+        "2"
+      ]
+    },
+    "632": {
+      "op": "+",
+      "defined_out": [
+        "add%2#0",
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "add%2#0"
+      ]
+    },
+    "633": {
+      "op": "dig 1",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "add%2#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "635": {
+      "op": "len",
+      "defined_out": [
+        "add%2#0",
+        "batch_id#0",
+        "drug_name#0",
+        "len%2#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "add%2#0",
+        "len%2#0"
+      ]
+    },
+    "636": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "eq%2#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0",
+        "eq%2#0"
+      ]
+    },
+    "637": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "tmp%4#0"
+      ]
+    },
+    "638": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0"
+      ]
+    },
+    "641": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ]
+    },
+    "644": {
+      "op": "dup",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "645": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)",
+        "0"
+      ]
+    },
+    "646": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%3#0",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0"
+      ]
+    },
+    "647": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0",
+        "2"
+      ]
+    },
+    "648": {
+      "op": "+",
+      "defined_out": [
+        "add%3#0",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "add%3#0"
+      ]
+    },
+    "649": {
+      "op": "dig 1",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "add%3#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "651": {
+      "op": "len",
+      "defined_out": [
+        "add%3#0",
+        "batch_id#0",
+        "drug_name#0",
+        "len%3#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "add%3#0",
+        "len%3#0"
+      ]
+    },
+    "652": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "eq%3#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0",
+        "eq%3#0"
+      ]
+    },
+    "653": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "tmp%6#0"
+      ]
+    },
+    "654": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0"
+      ]
+    },
+    "657": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0"
+      ]
+    },
+    "660": {
+      "op": "dup",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "661": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)",
+        "0"
+      ]
+    },
+    "662": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%4#0",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0"
+      ]
+    },
+    "663": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0",
+        "2"
+      ]
+    },
+    "664": {
+      "op": "+",
+      "defined_out": [
+        "add%4#0",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "add%4#0"
+      ]
+    },
+    "665": {
+      "op": "dig 1",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "add%4#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "667": {
+      "op": "len",
+      "defined_out": [
+        "add%4#0",
+        "batch_id#0",
+        "drug_name#0",
+        "len%4#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "add%4#0",
+        "len%4#0"
+      ]
+    },
+    "668": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "eq%4#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0",
+        "eq%4#0"
+      ]
+    },
+    "669": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "tmp%8#0"
+      ]
+    },
+    "670": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0"
+      ]
+    },
+    "673": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0"
+      ]
+    },
+    "676": {
+      "op": "dup",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ]
+    },
+    "677": {
+      "op": "len",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "len%5#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0",
+        "len%5#0"
+      ]
+    },
+    "678": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "len%5#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0",
+        "len%5#0",
+        "8"
+      ]
+    },
+    "679": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "eq%5#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0",
+        "eq%5#0"
+      ]
+    },
+    "680": {
+      "error": "invalid number of bytes for uint64",
+      "op": "assert // invalid number of bytes for uint64",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "tmp%10#0"
+      ]
+    },
+    "681": {
+      "op": "btoi",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "682": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "0"
+      ]
+    },
+    "683": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "684": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "685": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "686": {
+      "op": "global ZeroAddress",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "maybe_value%0#0",
+        "quantity#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "maybe_value%0#0",
+        "tmp%0#1"
+      ]
+    },
+    "688": {
+      "op": "==",
+      "defined_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%1#1"
+      ]
+    },
+    "689": {
+      "op": "bz register_else_body@3",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "692": {
+      "op": "bytec_1 // \"producer\"",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"producer\""
+      ]
+    },
+    "693": {
+      "op": "txn Sender",
+      "defined_out": [
+        "\"producer\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"producer\"",
+        "tmp%2#1"
+      ]
+    },
+    "695": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "696": {
+      "block": "register_after_if_else@4",
+      "stack_in": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ],
+      "op": "bytec 17 // \"batch_id\"",
+      "defined_out": [
+        "\"batch_id\""
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"batch_id\""
+      ]
+    },
+    "698": {
+      "op": "dig 6",
+      "defined_out": [
+        "\"batch_id\"",
+        "batch_id#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"batch_id\"",
+        "batch_id#0"
+      ]
+    },
+    "700": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "701": {
+      "op": "bytec 18 // \"drug_name\"",
+      "defined_out": [
+        "\"drug_name\"",
+        "batch_id#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"drug_name\""
+      ]
+    },
+    "703": {
+      "op": "dig 5",
+      "defined_out": [
+        "\"drug_name\"",
+        "batch_id#0",
+        "drug_name#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"drug_name\"",
+        "drug_name#0"
+      ]
+    },
+    "705": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "706": {
+      "op": "bytec 19 // \"manufacturer\"",
+      "defined_out": [
+        "\"manufacturer\"",
+        "batch_id#0",
+        "drug_name#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"manufacturer\""
+      ]
+    },
+    "708": {
+      "op": "dig 4",
+      "defined_out": [
+        "\"manufacturer\"",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"manufacturer\"",
+        "manufacturer#0"
+      ]
+    },
+    "710": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "711": {
+      "op": "bytec 20 // \"manufacture_date\"",
+      "defined_out": [
+        "\"manufacture_date\"",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"manufacture_date\""
+      ]
+    },
+    "713": {
+      "op": "dig 3",
+      "defined_out": [
+        "\"manufacture_date\"",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"manufacture_date\"",
+        "manufacture_date#0"
+      ]
+    },
+    "715": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "716": {
+      "op": "bytec 21 // \"expiry_date\"",
+      "defined_out": [
+        "\"expiry_date\"",
+        "batch_id#0",
+        "drug_name#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"expiry_date\""
+      ]
+    },
+    "718": {
+      "op": "dig 2",
+      "defined_out": [
+        "\"expiry_date\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"expiry_date\"",
+        "expiry_date#0"
+      ]
+    },
+    "720": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "721": {
+      "op": "bytec 12 // \"quantity\"",
+      "defined_out": [
+        "\"quantity\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"quantity\""
+      ]
+    },
+    "723": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"quantity\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"quantity\"",
+        "quantity#0"
+      ]
+    },
+    "725": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "726": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"status\""
+      ]
+    },
+    "727": {
+      "op": "bytec 13 // \"pending\"",
+      "defined_out": [
+        "\"pending\"",
+        "\"status\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"status\"",
+        "\"pending\""
+      ]
+    },
+    "729": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "730": {
+      "op": "bytec 5 // \"timestamp\"",
+      "defined_out": [
+        "\"timestamp\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"timestamp\""
+      ]
+    },
+    "732": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"timestamp\"",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "\"timestamp\"",
+        "tmp%5#1"
+      ]
+    },
+    "734": {
+      "op": "app_global_put",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "735": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "batch_id#0",
+        "drug_name#0",
+        "expiry_date#0",
+        "manufacture_date#0",
+        "manufacturer#0",
+        "quantity#0"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "1"
+      ]
+    },
+    "736": {
+      "op": "return",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "737": {
+      "block": "register_else_body@3",
+      "stack_in": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%3#1"
+      ]
+    },
+    "739": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%3#1",
+        "0"
+      ]
+    },
+    "740": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%3#1",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "741": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%3#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "742": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%3#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "743": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0",
+        "tmp%4#1"
+      ]
+    },
+    "744": {
+      "op": "assert",
+      "stack_out": [
+        "batch_id#0",
+        "drug_name#0",
+        "manufacturer#0",
+        "manufacture_date#0",
+        "expiry_date#0",
+        "quantity#0"
+      ]
+    },
+    "745": {
+      "op": "b register_after_if_else@4"
+    },
+    "748": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.update_status[routing]",
+      "params": {},
+      "block": "update_status",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "751": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "752": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "753": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "754": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "755": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "756": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "758": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "759": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "760": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "761": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "status_text#0"
+      ],
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "764": {
+      "op": "txn Sender",
+      "defined_out": [
+        "status_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%0#1"
+      ]
+    },
+    "766": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "status_text#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "767": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "status_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%0#1",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "768": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "status_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "769": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "status_text#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "770": {
+      "op": "==",
+      "defined_out": [
+        "status_text#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%1#1"
+      ]
+    },
+    "771": {
+      "op": "bnz update_status_bool_true@4",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "774": {
+      "op": "txn Sender",
+      "defined_out": [
+        "status_text#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%2#0"
+      ]
+    },
+    "776": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "status_text#0",
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "777": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "status_text#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%2#0",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "778": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "status_text#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "779": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "status_text#0",
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "780": {
+      "op": "==",
+      "defined_out": [
+        "status_text#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%3#0"
+      ]
+    },
+    "781": {
+      "op": "bnz update_status_bool_true@4",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "784": {
+      "op": "txn Sender",
+      "defined_out": [
+        "status_text#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%4#0"
+      ]
+    },
+    "786": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "status_text#0",
+        "tmp%4#0",
+        "0"
+      ]
+    },
+    "787": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\"",
+        "0",
+        "status_text#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%4#0",
+        "0",
+        "\"regulator\""
+      ]
+    },
+    "789": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "status_text#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%4#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "790": {
+      "error": "check self.regulator exists",
+      "op": "assert // check self.regulator exists",
+      "stack_out": [
+        "status_text#0",
+        "tmp%4#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "791": {
+      "op": "==",
+      "defined_out": [
+        "status_text#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "tmp%5#0"
+      ]
+    },
+    "792": {
+      "op": "bz update_status_bool_false@5",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "795": {
+      "block": "update_status_bool_true@4",
+      "stack_in": [
+        "status_text#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "or_result%0#0"
+      ]
+    },
+    "796": {
+      "block": "update_status_bool_merge@6",
+      "stack_in": [
+        "status_text#0",
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "797": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "status_text#0",
+        "\"status\""
+      ]
+    },
+    "798": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"status\"",
+        "status_text#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "\"status\"",
+        "status_text#0"
+      ]
+    },
+    "800": {
+      "op": "app_global_put",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "801": {
+      "op": "bytec 5 // \"timestamp\"",
+      "defined_out": [
+        "\"timestamp\"",
+        "status_text#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "\"timestamp\""
+      ]
+    },
+    "803": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"timestamp\"",
+        "status_text#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "\"timestamp\"",
+        "tmp%6#0"
+      ]
+    },
+    "805": {
+      "op": "app_global_put",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "806": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "status_text#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "1"
+      ]
+    },
+    "807": {
+      "op": "return",
+      "stack_out": [
+        "status_text#0"
+      ]
+    },
+    "808": {
+      "block": "update_status_bool_false@5",
+      "stack_in": [
+        "status_text#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "status_text#0",
+        "or_result%0#0"
+      ]
+    },
+    "809": {
+      "op": "b update_status_bool_merge@6"
+    },
+    "812": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.approve[routing]",
+      "params": {},
+      "block": "approve",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "815": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "816": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "817": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "818": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "819": {
+      "error": "invalid number of bytes for uint64",
+      "op": "assert // invalid number of bytes for uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "820": {
+      "op": "btoi",
+      "defined_out": [
+        "compliance_score#0"
+      ],
+      "stack_out": [
+        "compliance_score#0"
+      ]
+    },
+    "821": {
+      "op": "txn Sender",
+      "defined_out": [
+        "compliance_score#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%0#1"
+      ]
+    },
+    "823": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "compliance_score#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "824": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\"",
+        "0",
+        "compliance_score#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%0#1",
+        "0",
+        "\"regulator\""
+      ]
+    },
+    "826": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "compliance_score#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "827": {
+      "error": "check self.regulator exists",
+      "op": "assert // check self.regulator exists",
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "828": {
+      "op": "==",
+      "defined_out": [
+        "compliance_score#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "tmp%1#1"
+      ]
+    },
+    "829": {
+      "op": "assert",
+      "stack_out": [
+        "compliance_score#0"
+      ]
+    },
+    "830": {
+      "op": "bytec 6 // \"reg_status\"",
+      "defined_out": [
+        "\"reg_status\"",
+        "compliance_score#0"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "\"reg_status\""
+      ]
+    },
+    "832": {
+      "op": "bytec 26 // \"approved\"",
+      "defined_out": [
+        "\"approved\"",
+        "\"reg_status\"",
+        "compliance_score#0"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "\"reg_status\"",
+        "\"approved\""
+      ]
+    },
+    "834": {
+      "op": "app_global_put",
+      "stack_out": [
+        "compliance_score#0"
+      ]
+    },
+    "835": {
+      "op": "bytec 23 // \"compliance_score\"",
+      "defined_out": [
+        "\"compliance_score\"",
+        "compliance_score#0"
+      ],
+      "stack_out": [
+        "compliance_score#0",
+        "\"compliance_score\""
+      ]
+    },
+    "837": {
+      "op": "swap",
+      "stack_out": [
+        "\"compliance_score\"",
+        "compliance_score#0"
+      ]
+    },
+    "838": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "839": {
+      "op": "bytec 7 // \"approval_ts\"",
+      "defined_out": [
+        "\"approval_ts\""
+      ],
+      "stack_out": [
+        "\"approval_ts\""
+      ]
+    },
+    "841": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ]
+    },
+    "843": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "844": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "845": {
+      "op": "bytec 26 // \"approved\"",
+      "stack_out": [
+        "\"status\"",
+        "\"approved\""
+      ]
+    },
+    "847": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "848": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "849": {
+      "op": "return",
+      "stack_out": []
+    },
+    "850": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.reject[routing]",
+      "params": {},
+      "block": "reject",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "853": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "854": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "855": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "856": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "857": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "858": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "860": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "861": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "862": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "863": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "reason_text#0"
+      ],
+      "stack_out": [
+        "reason_text#0"
+      ]
+    },
+    "866": {
+      "op": "txn Sender",
+      "defined_out": [
+        "reason_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "tmp%0#1"
+      ]
+    },
+    "868": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "reason_text#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "869": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\"",
+        "0",
+        "reason_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "tmp%0#1",
+        "0",
+        "\"regulator\""
+      ]
+    },
+    "871": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "reason_text#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "872": {
+      "error": "check self.regulator exists",
+      "op": "assert // check self.regulator exists",
+      "stack_out": [
+        "reason_text#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "873": {
+      "op": "==",
+      "defined_out": [
+        "reason_text#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "tmp%1#1"
+      ]
+    },
+    "874": {
+      "op": "assert",
+      "stack_out": [
+        "reason_text#0"
+      ]
+    },
+    "875": {
+      "op": "bytec 6 // \"reg_status\"",
+      "defined_out": [
+        "\"reg_status\"",
+        "reason_text#0"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "\"reg_status\""
+      ]
+    },
+    "877": {
+      "op": "bytec 27 // \"rejected\"",
+      "defined_out": [
+        "\"reg_status\"",
+        "\"rejected\"",
+        "reason_text#0"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "\"reg_status\"",
+        "\"rejected\""
+      ]
+    },
+    "879": {
+      "op": "app_global_put",
+      "stack_out": [
+        "reason_text#0"
+      ]
+    },
+    "880": {
+      "op": "bytec 22 // \"rej_reason\"",
+      "defined_out": [
+        "\"rej_reason\"",
+        "reason_text#0"
+      ],
+      "stack_out": [
+        "reason_text#0",
+        "\"rej_reason\""
+      ]
+    },
+    "882": {
+      "op": "swap",
+      "stack_out": [
+        "\"rej_reason\"",
+        "reason_text#0"
+      ]
+    },
+    "883": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "884": {
+      "op": "bytec 7 // \"approval_ts\"",
+      "defined_out": [
+        "\"approval_ts\""
+      ],
+      "stack_out": [
+        "\"approval_ts\""
+      ]
+    },
+    "886": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "\"approval_ts\"",
+        "tmp%2#0"
+      ]
+    },
+    "888": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "889": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "890": {
+      "op": "bytec 27 // \"rejected\"",
+      "stack_out": [
+        "\"status\"",
+        "\"rejected\""
+      ]
+    },
+    "892": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "893": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "894": {
+      "op": "return",
+      "stack_out": []
+    },
+    "895": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.transfer[routing]",
+      "params": {},
+      "block": "transfer",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1"
+    },
+    "898": {
+      "op": "dup",
+      "defined_out": [
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "new_receiver#0"
+      ]
+    },
+    "899": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "len%0#0"
+      ]
+    },
+    "900": {
+      "op": "pushint 32 // 32",
+      "defined_out": [
+        "32",
+        "len%0#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "len%0#0",
+        "32"
+      ]
+    },
+    "902": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "eq%0#0"
+      ]
+    },
+    "903": {
+      "error": "invalid number of bytes for uint8[32]",
+      "op": "assert // invalid number of bytes for uint8[32]",
+      "stack_out": [
+        "new_receiver#0"
+      ]
+    },
+    "904": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0"
+      ]
+    },
+    "907": {
+      "op": "dup",
+      "defined_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "908": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "0"
+      ]
+    },
+    "909": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "910": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "911": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "add%0#0"
+      ]
+    },
+    "912": {
+      "op": "dig 1",
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "add%0#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "914": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%1#0",
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "add%0#0",
+        "len%1#0"
+      ]
+    },
+    "915": {
+      "op": "==",
+      "defined_out": [
+        "eq%1#0",
+        "new_receiver#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0",
+        "eq%1#0"
+      ]
+    },
+    "916": {
+      "error": "invalid number of bytes for (len+utf8[])",
+      "op": "assert // invalid number of bytes for (len+utf8[])",
+      "stack_out": [
+        "new_receiver#0",
+        "tmp%2#0"
+      ]
+    },
+    "917": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "920": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0"
+      ]
+    },
+    "921": {
+      "op": "bytec 10 // \"transfer_count\"",
+      "defined_out": [
+        "\"transfer_count\"",
+        "0",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0",
+        "\"transfer_count\""
+      ]
+    },
+    "923": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "location#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "924": {
+      "error": "check self.transfer_count exists",
+      "op": "assert // check self.transfer_count exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "925": {
+      "op": "bnz transfer_else_body@7",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "928": {
+      "op": "txn Sender",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%1#1"
+      ]
+    },
+    "930": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "931": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "location#0",
+        "new_receiver#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%1#1",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "932": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "location#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "new_receiver#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%1#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "933": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%1#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "934": {
+      "op": "==",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%2#1"
+      ]
+    },
+    "935": {
+      "op": "bnz transfer_bool_true@4",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "938": {
+      "op": "txn Sender",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%3#1"
+      ]
+    },
+    "940": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%3#1",
+        "0"
+      ]
+    },
+    "941": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "location#0",
+        "new_receiver#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%3#1",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "942": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "location#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "new_receiver#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%3#1",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "943": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%3#1",
+        "maybe_value%2#0"
+      ]
+    },
+    "944": {
+      "op": "==",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%4#0"
+      ]
+    },
+    "945": {
+      "op": "bz transfer_bool_false@5",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "948": {
+      "block": "transfer_bool_true@4",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%0#0"
+      ]
+    },
+    "949": {
+      "block": "transfer_bool_merge@6",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "950": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0"
+      ]
+    },
+    "951": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "952": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "953": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "954": {
+      "op": "bytec 8 // \"sender\"",
+      "defined_out": [
+        "\"sender\"",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%3#0",
+        "\"sender\""
+      ]
+    },
+    "956": {
+      "op": "swap",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"sender\"",
+        "maybe_value%3#0"
+      ]
+    },
+    "957": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "958": {
+      "block": "transfer_after_if_else@12",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "bytec 9 // \"receiver\"",
+      "defined_out": [
+        "\"receiver\""
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"receiver\""
+      ]
+    },
+    "960": {
+      "op": "dig 2",
+      "defined_out": [
+        "\"receiver\"",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"receiver\"",
+        "new_receiver#0"
+      ]
+    },
+    "962": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "963": {
+      "op": "bytec 24 // \"current_location\"",
+      "defined_out": [
+        "\"current_location\"",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"current_location\""
+      ]
+    },
+    "965": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"current_location\"",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"current_location\"",
+        "location#0"
+      ]
+    },
+    "967": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "968": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0"
+      ]
+    },
+    "969": {
+      "op": "bytec 10 // \"transfer_count\"",
+      "defined_out": [
+        "\"transfer_count\"",
+        "0",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0",
+        "\"transfer_count\""
+      ]
+    },
+    "971": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "location#0",
+        "maybe_exists%7#0",
+        "maybe_value%7#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "972": {
+      "error": "check self.transfer_count exists",
+      "op": "assert // check self.transfer_count exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "973": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "location#0",
+        "maybe_value%7#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%7#0",
+        "1"
+      ]
+    },
+    "974": {
+      "op": "+",
+      "defined_out": [
+        "location#0",
+        "new_receiver#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%9#0"
+      ]
+    },
+    "975": {
+      "op": "bytec 10 // \"transfer_count\"",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%9#0",
+        "\"transfer_count\""
+      ]
+    },
+    "977": {
+      "op": "swap",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"transfer_count\"",
+        "tmp%9#0"
+      ]
+    },
+    "978": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "979": {
+      "op": "bytec 14 // \"last_transfer_ts\"",
+      "defined_out": [
+        "\"last_transfer_ts\"",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"last_transfer_ts\""
+      ]
+    },
+    "981": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"last_transfer_ts\"",
+        "location#0",
+        "new_receiver#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"last_transfer_ts\"",
+        "tmp%10#0"
+      ]
+    },
+    "983": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "984": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\"",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"status\""
+      ]
+    },
+    "985": {
+      "op": "pushbytes \"in_transit\"",
+      "defined_out": [
+        "\"in_transit\"",
+        "\"status\"",
+        "location#0",
+        "new_receiver#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"status\"",
+        "\"in_transit\""
+      ]
+    },
+    "997": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "998": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "1"
+      ]
+    },
+    "999": {
+      "op": "return",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "1000": {
+      "block": "transfer_bool_false@5",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%0#0"
+      ]
+    },
+    "1001": {
+      "op": "b transfer_bool_merge@6"
+    },
+    "1004": {
+      "block": "transfer_else_body@7",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%5#0"
+      ]
+    },
+    "1006": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%5#0",
+        "0"
+      ]
+    },
+    "1007": {
+      "op": "bytec 8 // \"sender\"",
+      "defined_out": [
+        "\"sender\"",
+        "0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%5#0",
+        "0",
+        "\"sender\""
+      ]
+    },
+    "1009": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%5#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1010": {
+      "error": "check self.sender exists",
+      "op": "assert // check self.sender exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%5#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "1011": {
+      "op": "==",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%6#0"
+      ]
+    },
+    "1012": {
+      "op": "bnz transfer_bool_true@9",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "1015": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%7#0"
+      ]
+    },
+    "1017": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%7#0",
+        "0"
+      ]
+    },
+    "1018": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%7#0",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "1019": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%7#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1020": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%7#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "1021": {
+      "op": "==",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "tmp%8#0"
+      ]
+    },
+    "1022": {
+      "op": "bz transfer_bool_false@10",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "1025": {
+      "block": "transfer_bool_true@9",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%1#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%1#0"
+      ]
+    },
+    "1026": {
+      "block": "transfer_bool_merge@11",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%1#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "1027": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0"
+      ]
+    },
+    "1028": {
+      "op": "bytec 9 // \"receiver\"",
+      "defined_out": [
+        "\"receiver\"",
+        "0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "0",
+        "\"receiver\""
+      ]
+    },
+    "1030": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "1031": {
+      "error": "check self.receiver exists",
+      "op": "assert // check self.receiver exists",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "1032": {
+      "op": "bytec 8 // \"sender\"",
+      "defined_out": [
+        "\"sender\"",
+        "maybe_value%6#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "maybe_value%6#0",
+        "\"sender\""
+      ]
+    },
+    "1034": {
+      "op": "swap",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "\"sender\"",
+        "maybe_value%6#0"
+      ]
+    },
+    "1035": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_receiver#0",
+        "location#0"
+      ]
+    },
+    "1036": {
+      "op": "b transfer_after_if_else@12"
+    },
+    "1039": {
+      "block": "transfer_bool_false@10",
+      "stack_in": [
+        "new_receiver#0",
+        "location#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%1#0"
+      ],
+      "stack_out": [
+        "new_receiver#0",
+        "location#0",
+        "or_result%1#0"
+      ]
+    },
+    "1040": {
+      "op": "b transfer_bool_merge@11"
+    },
+    "1043": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.mark_delivered[routing]",
+      "params": {},
+      "block": "mark_delivered",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1045": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "1046": {
+      "op": "bytec 9 // \"receiver\"",
+      "defined_out": [
+        "\"receiver\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"receiver\""
+      ]
+    },
+    "1048": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1049": {
+      "error": "check self.receiver exists",
+      "op": "assert // check self.receiver exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1050": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1051": {
+      "op": "bnz mark_delivered_bool_true@3",
+      "stack_out": []
+    },
+    "1054": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1056": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "1057": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "1058": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1059": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1060": {
+      "op": "==",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1061": {
+      "op": "bz mark_delivered_bool_false@4",
+      "stack_out": []
+    },
+    "1064": {
+      "block": "mark_delivered_bool_true@3",
+      "stack_in": [],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "or_result%0#0"
+      ]
+    },
+    "1065": {
+      "block": "mark_delivered_bool_merge@5",
+      "stack_in": [
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "1066": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "1067": {
+      "op": "pushbytes \"delivered\"",
+      "defined_out": [
+        "\"delivered\"",
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"delivered\""
+      ]
+    },
+    "1078": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1079": {
+      "op": "bytec 14 // \"last_transfer_ts\"",
+      "defined_out": [
+        "\"last_transfer_ts\""
+      ],
+      "stack_out": [
+        "\"last_transfer_ts\""
+      ]
+    },
+    "1081": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"last_transfer_ts\"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "\"last_transfer_ts\"",
+        "tmp%4#0"
+      ]
+    },
+    "1083": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1084": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "1085": {
+      "op": "return",
+      "stack_out": []
+    },
+    "1086": {
+      "block": "mark_delivered_bool_false@4",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "or_result%0#0"
+      ]
+    },
+    "1087": {
+      "op": "b mark_delivered_bool_merge@5"
+    },
+    "1090": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.set_qr[routing]",
+      "params": {},
+      "block": "set_qr",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1093": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "1094": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "1095": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "1096": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "1097": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "1098": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "1100": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "1101": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "1102": {
+      "error": "invalid number of bytes for (len+uint8[])",
+      "op": "assert // invalid number of bytes for (len+uint8[])",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1103": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1106": {
+      "op": "txn Sender",
+      "defined_out": [
+        "qr_hash#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%0#1"
+      ]
+    },
+    "1108": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "1109": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "qr_hash#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%0#1",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "1110": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "qr_hash#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1111": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "1112": {
+      "op": "==",
+      "defined_out": [
+        "qr_hash#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%1#1"
+      ]
+    },
+    "1113": {
+      "op": "bnz set_qr_bool_true@3",
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1116": {
+      "op": "txn Sender",
+      "defined_out": [
+        "qr_hash#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%2#0"
+      ]
+    },
+    "1118": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "1119": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "qr_hash#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%2#0",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "1120": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "qr_hash#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1121": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1122": {
+      "op": "==",
+      "defined_out": [
+        "qr_hash#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "tmp%3#0"
+      ]
+    },
+    "1123": {
+      "op": "bz set_qr_bool_false@4",
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1126": {
+      "block": "set_qr_bool_true@3",
+      "stack_in": [
+        "qr_hash#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "or_result%0#0"
+      ]
+    },
+    "1127": {
+      "block": "set_qr_bool_merge@5",
+      "stack_in": [
+        "qr_hash#0",
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1128": {
+      "op": "bytec 16 // \"qr_hash\"",
+      "defined_out": [
+        "\"qr_hash\""
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "\"qr_hash\""
+      ]
+    },
+    "1130": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"qr_hash\"",
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "\"qr_hash\"",
+        "qr_hash#0"
+      ]
+    },
+    "1132": {
+      "op": "app_global_put",
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1133": {
+      "op": "bytec 11 // \"last_verif_ts\"",
+      "defined_out": [
+        "\"last_verif_ts\"",
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "\"last_verif_ts\""
+      ]
+    },
+    "1135": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"last_verif_ts\"",
+        "qr_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "\"last_verif_ts\"",
+        "tmp%4#0"
+      ]
+    },
+    "1137": {
+      "op": "app_global_put",
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1138": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "1"
+      ]
+    },
+    "1139": {
+      "op": "return",
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1140": {
+      "block": "set_qr_bool_false@4",
+      "stack_in": [
+        "qr_hash#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "or_result%0#0"
+      ]
+    },
+    "1141": {
+      "op": "b set_qr_bool_merge@5"
+    },
+    "1144": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.verify[routing]",
+      "params": {},
+      "block": "verify",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1147": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "1148": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "1149": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "1150": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "1151": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "1152": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "1154": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "1155": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "1156": {
+      "error": "invalid number of bytes for (len+uint8[])",
+      "op": "assert // invalid number of bytes for (len+uint8[])",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1157": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0"
+      ]
+    },
+    "1160": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "qr_hash#0",
+        "0"
+      ]
+    },
+    "1161": {
+      "op": "bytec 16 // \"qr_hash\"",
+      "defined_out": [
+        "\"qr_hash\"",
+        "0",
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "0",
+        "\"qr_hash\""
+      ]
+    },
+    "1163": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "qr_hash#0"
+      ],
+      "stack_out": [
+        "qr_hash#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1164": {
+      "error": "check self.qr_hash exists",
+      "op": "assert // check self.qr_hash exists",
+      "stack_out": [
+        "qr_hash#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1165": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "1166": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "1167": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1168": {
+      "op": "bytec 15 // \"verif_count\"",
+      "defined_out": [
+        "\"verif_count\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"verif_count\""
+      ]
+    },
+    "1170": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1171": {
+      "error": "check self.verif_count exists",
+      "op": "assert // check self.verif_count exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1172": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "1"
+      ]
+    },
+    "1173": {
+      "op": "+",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "1174": {
+      "op": "bytec 15 // \"verif_count\"",
+      "stack_out": [
+        "tmp%1#1",
+        "\"verif_count\""
+      ]
+    },
+    "1176": {
+      "op": "swap",
+      "stack_out": [
+        "\"verif_count\"",
+        "tmp%1#1"
+      ]
+    },
+    "1177": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1178": {
+      "op": "bytec 11 // \"last_verif_ts\"",
+      "defined_out": [
+        "\"last_verif_ts\""
+      ],
+      "stack_out": [
+        "\"last_verif_ts\""
+      ]
+    },
+    "1180": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"last_verif_ts\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "\"last_verif_ts\"",
+        "tmp%2#0"
+      ]
+    },
+    "1182": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1183": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "1184": {
+      "op": "return",
+      "stack_out": []
+    },
+    "1185": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.mark_counterfeit[routing]",
+      "params": {},
+      "block": "mark_counterfeit",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1187": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "1188": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "1189": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1190": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1191": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1192": {
+      "op": "bnz mark_counterfeit_bool_true@3",
+      "stack_out": []
+    },
+    "1195": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1197": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "1198": {
+      "op": "bytec 4 // \"regulator\"",
+      "defined_out": [
+        "\"regulator\"",
+        "0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "0",
+        "\"regulator\""
+      ]
+    },
+    "1200": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1201": {
+      "error": "check self.regulator exists",
+      "op": "assert // check self.regulator exists",
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1202": {
+      "op": "==",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1203": {
+      "op": "bz mark_counterfeit_bool_false@4",
+      "stack_out": []
+    },
+    "1206": {
+      "block": "mark_counterfeit_bool_true@3",
+      "stack_in": [],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "or_result%0#0"
+      ]
+    },
+    "1207": {
+      "block": "mark_counterfeit_bool_merge@5",
+      "stack_in": [
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "1208": {
+      "op": "bytec 25 // \"is_authentic\"",
+      "defined_out": [
+        "\"is_authentic\""
+      ],
+      "stack_out": [
+        "\"is_authentic\""
+      ]
+    },
+    "1210": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"is_authentic\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"is_authentic\"",
+        "0"
+      ]
+    },
+    "1211": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1212": {
+      "op": "bytec_3 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "1213": {
+      "op": "pushbytes \"counterfeit\"",
+      "defined_out": [
+        "\"counterfeit\"",
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"counterfeit\""
+      ]
+    },
+    "1226": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1227": {
+      "op": "bytec 11 // \"last_verif_ts\"",
+      "defined_out": [
+        "\"last_verif_ts\""
+      ],
+      "stack_out": [
+        "\"last_verif_ts\""
+      ]
+    },
+    "1229": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"last_verif_ts\"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "\"last_verif_ts\"",
+        "tmp%4#0"
+      ]
+    },
+    "1231": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1232": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "1233": {
+      "op": "return",
+      "stack_out": []
+    },
+    "1234": {
+      "block": "mark_counterfeit_bool_false@4",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "or_result%0#0"
+      ]
+    },
+    "1235": {
+      "op": "b mark_counterfeit_bool_merge@5"
+    },
+    "1238": {
+      "subroutine": "smart_contracts.algo_healx.contract.DrugBatchContract.update_quantity[routing]",
+      "params": {},
+      "block": "update_quantity",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1241": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "1242": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "1243": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "1244": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "1245": {
+      "error": "invalid number of bytes for uint64",
+      "op": "assert // invalid number of bytes for uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1246": {
+      "op": "btoi",
+      "defined_out": [
+        "new_quantity#0"
+      ],
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1247": {
+      "op": "txn Sender",
+      "defined_out": [
+        "new_quantity#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%0#1"
+      ]
+    },
+    "1249": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "1250": {
+      "op": "bytec_1 // \"producer\"",
+      "defined_out": [
+        "\"producer\"",
+        "0",
+        "new_quantity#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%0#1",
+        "0",
+        "\"producer\""
+      ]
+    },
+    "1251": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "new_quantity#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1252": {
+      "error": "check self.producer exists",
+      "op": "assert // check self.producer exists",
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "1253": {
+      "op": "==",
+      "defined_out": [
+        "new_quantity#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%1#1"
+      ]
+    },
+    "1254": {
+      "op": "bnz update_quantity_bool_true@3",
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1257": {
+      "op": "txn Sender",
+      "defined_out": [
+        "new_quantity#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%2#0"
+      ]
+    },
+    "1259": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "1260": {
+      "op": "bytec_0 // \"admin\"",
+      "defined_out": [
+        "\"admin\"",
+        "0",
+        "new_quantity#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%2#0",
+        "0",
+        "\"admin\""
+      ]
+    },
+    "1261": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "new_quantity#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1262": {
+      "error": "check self.admin exists",
+      "op": "assert // check self.admin exists",
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1263": {
+      "op": "==",
+      "defined_out": [
+        "new_quantity#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "tmp%3#0"
+      ]
+    },
+    "1264": {
+      "op": "bz update_quantity_bool_false@4",
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1267": {
+      "block": "update_quantity_bool_true@3",
+      "stack_in": [
+        "new_quantity#0"
+      ],
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "or_result%0#0"
+      ]
+    },
+    "1268": {
+      "block": "update_quantity_bool_merge@5",
+      "stack_in": [
+        "new_quantity#0",
+        "or_result%0#0"
+      ],
+      "op": "assert",
+      "defined_out": [],
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1269": {
+      "op": "bytec 12 // \"quantity\"",
+      "defined_out": [
+        "\"quantity\""
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "\"quantity\""
+      ]
+    },
+    "1271": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"quantity\"",
+        "new_quantity#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "\"quantity\"",
+        "new_quantity#0"
+      ]
+    },
+    "1273": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1274": {
+      "op": "bytec 5 // \"timestamp\"",
+      "defined_out": [
+        "\"timestamp\"",
+        "new_quantity#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "\"timestamp\""
+      ]
+    },
+    "1276": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "\"timestamp\"",
+        "new_quantity#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "\"timestamp\"",
+        "tmp%4#0"
+      ]
+    },
+    "1278": {
+      "op": "app_global_put",
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1279": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "new_quantity#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "1"
+      ]
+    },
+    "1280": {
+      "op": "return",
+      "stack_out": [
+        "new_quantity#0"
+      ]
+    },
+    "1281": {
+      "block": "update_quantity_bool_false@4",
+      "stack_in": [
+        "new_quantity#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "or_result%0#0"
+      ],
+      "stack_out": [
+        "new_quantity#0",
+        "or_result%0#0"
+      ]
+    },
+    "1282": {
+      "op": "b update_quantity_bool_merge@5"
+    }
+  }
+}

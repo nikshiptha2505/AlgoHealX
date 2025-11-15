@@ -1,0 +1,912 @@
+#pragma version 11
+#pragma typetrack false
+
+// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+main:
+    intcblock 0 1 2 8
+    bytecblock "admin" "producer" 0x "status" "regulator" "timestamp" "reg_status" "approval_ts" "sender" "receiver" "transfer_count" "last_verif_ts" "quantity" "pending" "last_transfer_ts" "verif_count" "qr_hash" "batch_id" "drug_name" "manufacturer" "manufacture_date" "expiry_date" "rej_reason" "compliance_score" "current_location" "is_authentic" "approved" "rejected"
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // smart_contracts/algo_healx/contract.py:4
+    // self.admin = Global.creator_address
+    bytec_0 // "admin"
+    global CreatorAddress
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:5
+    // self.producer = Account()
+    bytec_1 // "producer"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:6
+    // self.regulator = Account()
+    bytec 4 // "regulator"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:7
+    // self.batch_id = String()
+    bytec 17 // "batch_id"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:8
+    // self.drug_name = String()
+    bytec 18 // "drug_name"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:9
+    // self.manufacturer = String()
+    bytec 19 // "manufacturer"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:10
+    // self.manufacture_date = String()
+    bytec 20 // "manufacture_date"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:11
+    // self.expiry_date = String()
+    bytec 21 // "expiry_date"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:12
+    // self.quantity = UInt64()
+    bytec 12 // "quantity"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:13
+    // self.status = String("unregistered")
+    bytec_3 // "status"
+    pushbytes "unregistered"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:14
+    // self.timestamp = UInt64()
+    bytec 5 // "timestamp"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:15
+    // self.reg_status = String("pending")
+    bytec 6 // "reg_status"
+    bytec 13 // "pending"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:16
+    // self.rej_reason = String()
+    bytec 22 // "rej_reason"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:17
+    // self.compliance_score = UInt64()
+    bytec 23 // "compliance_score"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:18
+    // self.approval_ts = UInt64()
+    bytec 7 // "approval_ts"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:19
+    // self.sender = Account()
+    bytec 8 // "sender"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:20
+    // self.receiver = Account()
+    bytec 9 // "receiver"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:21
+    // self.current_location = String()
+    bytec 24 // "current_location"
+    bytec_2 // ""
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:22
+    // self.transfer_count = UInt64()
+    bytec 10 // "transfer_count"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:23
+    // self.last_transfer_ts = UInt64()
+    bytec 14 // "last_transfer_ts"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:24
+    // self.verif_count = UInt64()
+    bytec 15 // "verif_count"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:25
+    // self.is_authentic = UInt64(1)
+    bytec 25 // "is_authentic"
+    intc_1 // 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:26
+    // self.last_verif_ts = UInt64()
+    bytec 11 // "last_verif_ts"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:27
+    // self.qr_hash = Bytes()
+    bytec 16 // "qr_hash"
+    bytec_2 // 0x
+    app_global_put
+
+main_after_if_else@2:
+    // smart_contracts/algo_healx/contract.py:2
+    // class DrugBatchContract(ARC4Contract):
+    txn NumAppArgs
+    bz main___algopy_default_create@23
+    txn OnCompletion
+    !
+    assert // OnCompletion must be NoOp
+    txn ApplicationID
+    assert
+    pushbytess 0xbf746b78 0x1b6680da 0x475afff8 0xadd6306e 0xbcb210f6 0x77b09c7a 0x5e23d57e 0xfdae70a5 0x6fad87ed 0xa5b0d7b6 0x385bb9c9 0x63f02aea 0x008c069c 0x573fc5d7 // method "set_regulator(address)void", method "register(string,string,string,string,string,uint64)void", method "update_status(string)void", method "approve(uint64)void", method "reject(string)void", method "transfer(address,string)void", method "mark_delivered()void", method "set_qr(byte[])void", method "verify(byte[])void", method "mark_counterfeit()void", method "update_quantity(uint64)void", method "get_info()void", method "get_status()void", method "get_history()void"
+    txna ApplicationArgs 0
+    match set_regulator register update_status approve reject transfer mark_delivered set_qr verify mark_counterfeit update_quantity main_get_info_route@17 main_get_status_route@18 main_get_history_route@19
+    err
+
+main_get_history_route@19:
+    // smart_contracts/algo_healx/contract.py:134
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+main_get_status_route@18:
+    // smart_contracts/algo_healx/contract.py:130
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+main_get_info_route@17:
+    // smart_contracts/algo_healx/contract.py:126
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+main___algopy_default_create@23:
+    txn OnCompletion
+    !
+    txn ApplicationID
+    !
+    &&
+    return // on error: OnCompletion must be NoOp && can only call when creating
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.set_regulator[routing]() -> void:
+set_regulator:
+    // smart_contracts/algo_healx/contract.py:29
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    pushint 32 // 32
+    ==
+    assert // invalid number of bytes for uint8[32]
+    // smart_contracts/algo_healx/contract.py:31
+    // assert Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    assert
+    // smart_contracts/algo_healx/contract.py:32
+    // self.regulator = regulator_addr
+    bytec 4 // "regulator"
+    swap
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:33
+    // self.reg_status = String("pending")
+    bytec 6 // "reg_status"
+    bytec 13 // "pending"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:34
+    // self.approval_ts = Global.latest_timestamp
+    bytec 7 // "approval_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:29
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.register[routing]() -> void:
+register:
+    // smart_contracts/algo_healx/contract.py:36
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    txna ApplicationArgs 2
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    txna ApplicationArgs 3
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    txna ApplicationArgs 4
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    txna ApplicationArgs 5
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    txna ApplicationArgs 6
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for uint64
+    btoi
+    // smart_contracts/algo_healx/contract.py:46
+    // if self.producer == Account():
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    global ZeroAddress
+    ==
+    bz register_else_body@3
+    // smart_contracts/algo_healx/contract.py:47
+    // self.producer = Txn.sender
+    bytec_1 // "producer"
+    txn Sender
+    app_global_put
+
+register_after_if_else@4:
+    // smart_contracts/algo_healx/contract.py:50
+    // self.batch_id = batch_id
+    bytec 17 // "batch_id"
+    dig 6
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:51
+    // self.drug_name = drug_name
+    bytec 18 // "drug_name"
+    dig 5
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:52
+    // self.manufacturer = manufacturer
+    bytec 19 // "manufacturer"
+    dig 4
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:53
+    // self.manufacture_date = manufacture_date
+    bytec 20 // "manufacture_date"
+    dig 3
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:54
+    // self.expiry_date = expiry_date
+    bytec 21 // "expiry_date"
+    dig 2
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:55
+    // self.quantity = quantity
+    bytec 12 // "quantity"
+    dig 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:56
+    // self.status = String("pending")
+    bytec_3 // "status"
+    bytec 13 // "pending"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:57
+    // self.timestamp = Global.latest_timestamp
+    bytec 5 // "timestamp"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:36
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+register_else_body@3:
+    // smart_contracts/algo_healx/contract.py:49
+    // assert Txn.sender == self.producer
+    txn Sender
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    ==
+    assert
+    b register_after_if_else@4
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.update_status[routing]() -> void:
+update_status:
+    // smart_contracts/algo_healx/contract.py:59
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    // smart_contracts/algo_healx/contract.py:61
+    // assert Txn.sender == self.admin or Txn.sender == self.producer or Txn.sender == self.regulator
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bnz update_status_bool_true@4
+    txn Sender
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    ==
+    bnz update_status_bool_true@4
+    txn Sender
+    intc_0 // 0
+    bytec 4 // "regulator"
+    app_global_get_ex
+    assert // check self.regulator exists
+    ==
+    bz update_status_bool_false@5
+
+update_status_bool_true@4:
+    intc_1 // 1
+
+update_status_bool_merge@6:
+    // smart_contracts/algo_healx/contract.py:61
+    // assert Txn.sender == self.admin or Txn.sender == self.producer or Txn.sender == self.regulator
+    assert
+    // smart_contracts/algo_healx/contract.py:62
+    // self.status = status_text
+    bytec_3 // "status"
+    dig 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:63
+    // self.timestamp = Global.latest_timestamp
+    bytec 5 // "timestamp"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:59
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+update_status_bool_false@5:
+    intc_0 // 0
+    b update_status_bool_merge@6
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.approve[routing]() -> void:
+approve:
+    // smart_contracts/algo_healx/contract.py:65
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for uint64
+    btoi
+    // smart_contracts/algo_healx/contract.py:67
+    // assert Txn.sender == self.regulator
+    txn Sender
+    intc_0 // 0
+    bytec 4 // "regulator"
+    app_global_get_ex
+    assert // check self.regulator exists
+    ==
+    assert
+    // smart_contracts/algo_healx/contract.py:68
+    // self.reg_status = String("approved")
+    bytec 6 // "reg_status"
+    bytec 26 // "approved"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:69
+    // self.compliance_score = compliance_score
+    bytec 23 // "compliance_score"
+    swap
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:70
+    // self.approval_ts = Global.latest_timestamp
+    bytec 7 // "approval_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:71
+    // self.status = String("approved")
+    bytec_3 // "status"
+    bytec 26 // "approved"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:65
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.reject[routing]() -> void:
+reject:
+    // smart_contracts/algo_healx/contract.py:73
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    // smart_contracts/algo_healx/contract.py:75
+    // assert Txn.sender == self.regulator
+    txn Sender
+    intc_0 // 0
+    bytec 4 // "regulator"
+    app_global_get_ex
+    assert // check self.regulator exists
+    ==
+    assert
+    // smart_contracts/algo_healx/contract.py:76
+    // self.reg_status = String("rejected")
+    bytec 6 // "reg_status"
+    bytec 27 // "rejected"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:77
+    // self.rej_reason = reason_text
+    bytec 22 // "rej_reason"
+    swap
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:78
+    // self.approval_ts = Global.latest_timestamp
+    bytec 7 // "approval_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:79
+    // self.status = String("rejected")
+    bytec_3 // "status"
+    bytec 27 // "rejected"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:73
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.transfer[routing]() -> void:
+transfer:
+    // smart_contracts/algo_healx/contract.py:81
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    pushint 32 // 32
+    ==
+    assert // invalid number of bytes for uint8[32]
+    txna ApplicationArgs 2
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+utf8[])
+    extract 2 0
+    // smart_contracts/algo_healx/contract.py:83
+    // if self.transfer_count == UInt64(0):
+    intc_0 // 0
+    bytec 10 // "transfer_count"
+    app_global_get_ex
+    assert // check self.transfer_count exists
+    bnz transfer_else_body@7
+    // smart_contracts/algo_healx/contract.py:84
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    ==
+    bnz transfer_bool_true@4
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bz transfer_bool_false@5
+
+transfer_bool_true@4:
+    intc_1 // 1
+
+transfer_bool_merge@6:
+    // smart_contracts/algo_healx/contract.py:84
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    assert
+    // smart_contracts/algo_healx/contract.py:85
+    // self.sender = self.producer
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    bytec 8 // "sender"
+    swap
+    app_global_put
+
+transfer_after_if_else@12:
+    // smart_contracts/algo_healx/contract.py:89
+    // self.receiver = new_receiver
+    bytec 9 // "receiver"
+    dig 2
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:90
+    // self.current_location = location
+    bytec 24 // "current_location"
+    dig 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:91
+    // self.transfer_count += UInt64(1)
+    intc_0 // 0
+    bytec 10 // "transfer_count"
+    app_global_get_ex
+    assert // check self.transfer_count exists
+    intc_1 // 1
+    +
+    bytec 10 // "transfer_count"
+    swap
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:92
+    // self.last_transfer_ts = Global.latest_timestamp
+    bytec 14 // "last_transfer_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:93
+    // self.status = String("in_transit")
+    bytec_3 // "status"
+    pushbytes "in_transit"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:81
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+transfer_bool_false@5:
+    intc_0 // 0
+    b transfer_bool_merge@6
+
+transfer_else_body@7:
+    // smart_contracts/algo_healx/contract.py:87
+    // assert Txn.sender == self.sender or Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec 8 // "sender"
+    app_global_get_ex
+    assert // check self.sender exists
+    ==
+    bnz transfer_bool_true@9
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bz transfer_bool_false@10
+
+transfer_bool_true@9:
+    intc_1 // 1
+
+transfer_bool_merge@11:
+    // smart_contracts/algo_healx/contract.py:87
+    // assert Txn.sender == self.sender or Txn.sender == self.admin
+    assert
+    // smart_contracts/algo_healx/contract.py:88
+    // self.sender = self.receiver
+    intc_0 // 0
+    bytec 9 // "receiver"
+    app_global_get_ex
+    assert // check self.receiver exists
+    bytec 8 // "sender"
+    swap
+    app_global_put
+    b transfer_after_if_else@12
+
+transfer_bool_false@10:
+    intc_0 // 0
+    b transfer_bool_merge@11
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.mark_delivered[routing]() -> void:
+mark_delivered:
+    // smart_contracts/algo_healx/contract.py:97
+    // assert Txn.sender == self.receiver or Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec 9 // "receiver"
+    app_global_get_ex
+    assert // check self.receiver exists
+    ==
+    bnz mark_delivered_bool_true@3
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bz mark_delivered_bool_false@4
+
+mark_delivered_bool_true@3:
+    intc_1 // 1
+
+mark_delivered_bool_merge@5:
+    // smart_contracts/algo_healx/contract.py:97
+    // assert Txn.sender == self.receiver or Txn.sender == self.admin
+    assert
+    // smart_contracts/algo_healx/contract.py:98
+    // self.status = String("delivered")
+    bytec_3 // "status"
+    pushbytes "delivered"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:99
+    // self.last_transfer_ts = Global.latest_timestamp
+    bytec 14 // "last_transfer_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:95
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+mark_delivered_bool_false@4:
+    intc_0 // 0
+    b mark_delivered_bool_merge@5
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.set_qr[routing]() -> void:
+set_qr:
+    // smart_contracts/algo_healx/contract.py:101
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+uint8[])
+    extract 2 0
+    // smart_contracts/algo_healx/contract.py:103
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    ==
+    bnz set_qr_bool_true@3
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bz set_qr_bool_false@4
+
+set_qr_bool_true@3:
+    intc_1 // 1
+
+set_qr_bool_merge@5:
+    // smart_contracts/algo_healx/contract.py:103
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    assert
+    // smart_contracts/algo_healx/contract.py:104
+    // self.qr_hash = qr_hash
+    bytec 16 // "qr_hash"
+    dig 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:105
+    // self.last_verif_ts = Global.latest_timestamp
+    bytec 11 // "last_verif_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:101
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+set_qr_bool_false@4:
+    intc_0 // 0
+    b set_qr_bool_merge@5
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.verify[routing]() -> void:
+verify:
+    // smart_contracts/algo_healx/contract.py:107
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16
+    intc_2 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for (len+uint8[])
+    extract 2 0
+    // smart_contracts/algo_healx/contract.py:109
+    // assert qr_hash == self.qr_hash
+    intc_0 // 0
+    bytec 16 // "qr_hash"
+    app_global_get_ex
+    assert // check self.qr_hash exists
+    ==
+    assert
+    // smart_contracts/algo_healx/contract.py:110
+    // self.verif_count += UInt64(1)
+    intc_0 // 0
+    bytec 15 // "verif_count"
+    app_global_get_ex
+    assert // check self.verif_count exists
+    intc_1 // 1
+    +
+    bytec 15 // "verif_count"
+    swap
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:111
+    // self.last_verif_ts = Global.latest_timestamp
+    bytec 11 // "last_verif_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:107
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.mark_counterfeit[routing]() -> void:
+mark_counterfeit:
+    // smart_contracts/algo_healx/contract.py:115
+    // assert Txn.sender == self.admin or Txn.sender == self.regulator
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bnz mark_counterfeit_bool_true@3
+    txn Sender
+    intc_0 // 0
+    bytec 4 // "regulator"
+    app_global_get_ex
+    assert // check self.regulator exists
+    ==
+    bz mark_counterfeit_bool_false@4
+
+mark_counterfeit_bool_true@3:
+    intc_1 // 1
+
+mark_counterfeit_bool_merge@5:
+    // smart_contracts/algo_healx/contract.py:115
+    // assert Txn.sender == self.admin or Txn.sender == self.regulator
+    assert
+    // smart_contracts/algo_healx/contract.py:116
+    // self.is_authentic = UInt64(0)
+    bytec 25 // "is_authentic"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:117
+    // self.status = String("counterfeit")
+    bytec_3 // "status"
+    pushbytes "counterfeit"
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:118
+    // self.last_verif_ts = Global.latest_timestamp
+    bytec 11 // "last_verif_ts"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:113
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+mark_counterfeit_bool_false@4:
+    intc_0 // 0
+    b mark_counterfeit_bool_merge@5
+
+
+// smart_contracts.algo_healx.contract.DrugBatchContract.update_quantity[routing]() -> void:
+update_quantity:
+    // smart_contracts/algo_healx/contract.py:120
+    // @arc4.abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_3 // 8
+    ==
+    assert // invalid number of bytes for uint64
+    btoi
+    // smart_contracts/algo_healx/contract.py:122
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    txn Sender
+    intc_0 // 0
+    bytec_1 // "producer"
+    app_global_get_ex
+    assert // check self.producer exists
+    ==
+    bnz update_quantity_bool_true@3
+    txn Sender
+    intc_0 // 0
+    bytec_0 // "admin"
+    app_global_get_ex
+    assert // check self.admin exists
+    ==
+    bz update_quantity_bool_false@4
+
+update_quantity_bool_true@3:
+    intc_1 // 1
+
+update_quantity_bool_merge@5:
+    // smart_contracts/algo_healx/contract.py:122
+    // assert Txn.sender == self.producer or Txn.sender == self.admin
+    assert
+    // smart_contracts/algo_healx/contract.py:123
+    // self.quantity = new_quantity
+    bytec 12 // "quantity"
+    dig 1
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:124
+    // self.timestamp = Global.latest_timestamp
+    bytec 5 // "timestamp"
+    global LatestTimestamp
+    app_global_put
+    // smart_contracts/algo_healx/contract.py:120
+    // @arc4.abimethod
+    intc_1 // 1
+    return
+
+update_quantity_bool_false@4:
+    intc_0 // 0
+    b update_quantity_bool_merge@5

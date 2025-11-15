@@ -68,6 +68,39 @@ export type Database = {
         }
         Relationships: []
       }
+      profiles: {
+        Row: {
+          created_at: string | null
+          email: string
+          id: string
+          name: string
+          phone: string
+          role: Database["public"]["Enums"]["app_role"]
+          updated_at: string | null
+          wallet_address: string
+        }
+        Insert: {
+          created_at?: string | null
+          email: string
+          id?: string
+          name: string
+          phone: string
+          role: Database["public"]["Enums"]["app_role"]
+          updated_at?: string | null
+          wallet_address: string
+        }
+        Update: {
+          created_at?: string | null
+          email?: string
+          id?: string
+          name?: string
+          phone?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          updated_at?: string | null
+          wallet_address?: string
+        }
+        Relationships: []
+      }
       regulatory_approvals: {
         Row: {
           approved_at: string | null
@@ -205,7 +238,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      app_role: "producer" | "regulator" | "distributor"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -332,6 +365,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["producer", "regulator", "distributor"],
+    },
   },
 } as const

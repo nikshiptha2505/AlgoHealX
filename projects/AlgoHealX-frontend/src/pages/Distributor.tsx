@@ -29,7 +29,7 @@ interface SupplyChainEvent {
 }
 
 const Distributor = () => {
-  const { accountAddress, isConnected, peraWallet } = useWallet();
+  const { accountAddress, isConnected, walletInstance } = useWallet();
   const { toast } = useToast();
   const [medicines, setMedicines] = useState<Medicine[]>([]);
   const [selectedBatch, setSelectedBatch] = useState('');
@@ -46,7 +46,7 @@ const Distributor = () => {
         .select('*')
         .eq('status', 'approved')
         .order('created_at', { ascending: false });
-      
+
       if (medsData) setMedicines(medsData);
 
       // Fetch supply chain events
@@ -54,7 +54,7 @@ const Distributor = () => {
         .from('supply_chain_events')
         .select('*')
         .order('created_at', { ascending: false });
-      
+
       if (eventsData) setSupplyChain(eventsData);
     };
 
@@ -98,13 +98,13 @@ const Distributor = () => {
   }, []);
 
   const sendBlockchainTransaction = async () => {
-    if (!peraWallet) throw new Error('Pera Wallet not initialized');
-    
+    if (!walletInstance) throw new Error('Wallet not initialized');
+
     try {
       const algosdk = (await import('algosdk')).default;
       const algodClient = new algosdk.Algodv2('', 'https://testnet-api.algonode.cloud', '');
       const params = await algodClient.getTransactionParams().do();
-      
+
       // Create 0.01 ALGO payment transaction for distribution
       const txn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         sender: accountAddress!,
@@ -115,11 +115,22 @@ const Distributor = () => {
       });
 
       const txnGroup = [{ txn }];
-      
-      // Sign with Pera Wallet
-      const signedTxn = await peraWallet.signTransaction([txnGroup]);
+
+      // Sign with wallet - handle both APIs
+      let signedTxn: Uint8Array[];
+      if (walletInstance.signTransactions) {
+        // Lute wallet API - expects array of transactions
+        signedTxn = await walletInstance.signTransactions([txn]);
+      } else if (walletInstance.signTransaction) {
+        // Pera/Defly wallet API - expects grouped transactions
+        signedTxn = await walletInstance.signTransaction([txnGroup]);
+      } else {
+        throw new Error('Wallet does not support transaction signing');
+      }
+
       const response = await algodClient.sendRawTransaction(signedTxn).do();
-      
+      console.log("Transaction ID:", response.txid);
+      console.log("Check your transaction at: https://lora.algokit.io/testnet/transaction/" + response.txid);
       return response.txid || txn.txID();
     } catch (error) {
       console.error('Blockchain transaction error:', error);
@@ -129,7 +140,7 @@ const Distributor = () => {
 
   const handleTransfer = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!isConnected || !accountAddress) {
       toast({
         title: 'Wallet Not Connected',

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Camera, Upload, X } from 'lucide-react';
-import QrReader from 'react-qr-scanner';
+import { QrReader } from 'react-qr-reader';
 import jsQR from 'jsqr';
 
 interface QRScannerProps {
@@ -15,13 +15,13 @@ export const QRScanner = ({ onScan, onClose }: QRScannerProps) => {
   const [error, setError] = useState<string>('');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleScan = (result) => {
+  const handleScan = (result: any) => {
     if (result?.text) {
       onScan(result.text);
     }
   };
 
-  const handleError = (error) => {
+  const handleError = (error: any) => {
     console.error('QR Scan Error:', error);
     setError('Failed to access camera. Please check permissions.');
   };

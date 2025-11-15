@@ -24,7 +24,7 @@ interface Medicine {
 }
 
 const Regulator = () => {
-  const { accountAddress, isConnected, peraWallet } = useWallet();
+  const { accountAddress, isConnected, walletInstance } = useWallet();
   const { toast } = useToast();
   const [medicines, setMedicines] = useState<Medicine[]>([]);
   const [loading, setLoading] = useState<string | null>(null);
@@ -37,7 +37,7 @@ const Regulator = () => {
         .from('medicines')
         .select('*')
         .order('created_at', { ascending: false });
-      
+
       if (data) setMedicines(data);
     };
 
@@ -65,12 +65,12 @@ const Regulator = () => {
   }, []);
 
   const sendBlockchainTransaction = async () => {
-    if (!peraWallet) throw new Error('Pera Wallet not initialized');
-    
+    if (!walletInstance) throw new Error('Wallet not initialized');
+
     try {
       const algodClient = new algosdk.Algodv2('', 'https://testnet-api.algonode.cloud', '');
       const params = await algodClient.getTransactionParams().do();
-      
+
       // Create 0.02 ALGO payment transaction
       const txn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
         sender: accountAddress!,
@@ -81,11 +81,23 @@ const Regulator = () => {
       });
 
       const txnGroup = [{ txn }];
-      
-      // Sign with Pera Wallet
-      const signedTxn = await peraWallet.signTransaction([txnGroup]);
+
+      // Sign with wallet - handle both APIs
+      let signedTxn: Uint8Array[];
+      if (walletInstance.signTransactions) {
+        // Lute wallet API - expects array of transactions
+        signedTxn = await walletInstance.signTransactions([txn]);
+      } else if (walletInstance.signTransaction) {
+        // Pera/Defly wallet API - expects grouped transactions
+        signedTxn = await walletInstance.signTransaction([txnGroup]);
+      } else {
+        throw new Error('Wallet does not support transaction signing');
+      }
+
       const response = await algodClient.sendRawTransaction(signedTxn).do();
-      
+      console.log("Transaction ID:", response.txid);
+      console.log("Check your transaction at: https://lora.algokit.io/testnet/transaction/" + response.txid);
+
       return response.txid || txn.txID();
     } catch (error) {
       console.error('Blockchain transaction error:', error);
@@ -108,7 +120,7 @@ const Regulator = () => {
     try {
       // Send blockchain transaction
       const txHash = await sendBlockchainTransaction();
-      
+
       // Call backend
       const { error } = await supabase.functions.invoke('approve-medicine', {
         body: {
@@ -304,7 +316,7 @@ const Regulator = () => {
                         <p className="font-medium font-mono text-xs">{medicine.producer_wallet.slice(0, 10)}...</p>
                       </div>
                     </div>
-                    
+
                     <div className="space-y-4">
                       <div className="grid grid-cols-2 gap-4">
                         <div>
@@ -332,7 +344,7 @@ const Regulator = () => {
                           />
                         </div>
                       </div>
-                      
+
                       <div className="flex gap-3">
                         <Button
                           onClick={() => handleApprove(medicine)}

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { useWallet } from '@/contexts/WalletContext';
+import { WalletSelector } from '@/components/WalletSelector';
 import { supabase } from '@/integrations/supabase/client';
 import { useEffect, useState } from 'react';
 
@@ -18,8 +19,9 @@ interface Medicine {
 }
 
 const Home = () => {
-  const { connectWallet, isConnected } = useWallet();
+  const { isConnected } = useWallet();
   const [medicines, setMedicines] = useState<Medicine[]>([]);
+  const [walletSelectorOpen, setWalletSelectorOpen] = useState(false);
 
   useEffect(() => {
     const fetchMedicines = async () => {
@@ -137,7 +139,7 @@ const Home = () => {
                 <Button 
                   size="lg" 
                   variant="secondary"
-                  onClick={connectWallet}
+                  onClick={() => setWalletSelectorOpen(true)}
                   className="w-full sm:w-auto"
                 >
                   <Shield className="mr-2 h-5 w-5" />
@@ -145,7 +147,7 @@ const Home = () => {
                 </Button>
               )}
               <Link to="/verify">
-                <Button size="lg" className="w-full sm:w-auto border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
                   Learn More
                 </Button>
               </Link>
@@ -265,7 +267,7 @@ const Home = () => {
                 <Button 
                   size="lg" 
                   className="bg-gradient-primary shadow-medical"
-                  onClick={connectWallet}
+                  onClick={() => setWalletSelectorOpen(true)}
                 >
                   Connect Wallet to Start
                 </Button>
@@ -274,6 +276,7 @@ const Home = () => {
           </Card>
         </div>
       </section>
+      <WalletSelector open={walletSelectorOpen} onOpenChange={setWalletSelectorOpen} />
     </div>
   );
 };

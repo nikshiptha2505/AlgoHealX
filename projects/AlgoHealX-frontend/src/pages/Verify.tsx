@@ -54,11 +54,11 @@ const Verify = () => {
       if (error) throw error;
 
       setVerificationResult(data);
-      
+
       toast({
         title: data.isAuthentic ? 'Medicine Verified' : 'Verification Warning',
-        description: data.isAuthentic 
-          ? 'Medicine is authentic and approved' 
+        description: data.isAuthentic
+          ? 'Medicine is authentic and approved'
           : 'Medicine not approved or issues found',
         variant: data.isAuthentic ? 'default' : 'destructive',
       });
@@ -76,11 +76,20 @@ const Verify = () => {
   };
 
   const handleQRScan = (data: string) => {
-    setBatchId(data);
+    try {
+      const parsed = JSON.parse(data);
+      if (parsed.batchId) {
+        setBatchId(parsed.batchId);
+      } else {
+        setBatchId(data);
+      }
+    } catch (err) {
+      setBatchId(data);
+    }
     setShowScanner(false);
     toast({
-      title: 'QR Code Scanned',
-      description: 'Batch ID captured from QR code',
+      title: "OR Code SCanned",
+      description: "Batch ID captured Successfully",
     });
   };
 
@@ -124,8 +133,8 @@ const Verify = () => {
                     }}
                   />
                 </div>
-                <Button 
-                  onClick={handleVerify} 
+                <Button
+                  onClick={handleVerify}
                   className="w-full bg-gradient-primary"
                   disabled={loading}
                 >
@@ -158,8 +167,8 @@ const Verify = () => {
             </CardHeader>
             <CardContent>
               {!showScanner ? (
-                <Button 
-                  onClick={() => setShowScanner(true)} 
+                <Button
+                  onClick={() => setShowScanner(true)}
                   className="w-full"
                   variant="outline"
                   disabled={loading}
@@ -169,7 +178,7 @@ const Verify = () => {
                 </Button>
               ) : (
                 <div className="space-y-4">
-                  <QRScanner 
+                  <QRScanner
                     onScan={handleQRScan}
                     onClose={() => setShowScanner(false)}
                   />
@@ -208,7 +217,7 @@ const Verify = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-muted-foreground">Status</p>
-                      <Badge 
+                      <Badge
                         variant={verificationResult.status === 'approved' ? 'default' : 'destructive'}
                         className="mt-1"
                       >
