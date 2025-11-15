@@ -1,45 +1,173 @@
-# AlgoHealX
+# 🎯 AlgoHealX – Blockchain Medicine Tracking System
 
-This starter full stack project has been generated using AlgoKit. See below for default getting started instructions.
+[![Algorand](https://img.shields.io/badge/Blockchain-Algorand-000000?style=for-the-badge&logo=algorand&logoColor=white)](https://algorand.com)
+[![PyTeal](https://img.shields.io/badge/Smart_Contracts-PyTeal-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://pyteal.readthedocs.io)
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Healthcare](https://img.shields.io/badge/Industry-Healthcare-FF6B6B?style=for-the-badge&logo=heart&logoColor=white)]()
+[![Supply Chain](https://img.shields.io/badge/Use_Case-Supply_Chain-4ECDC4?style=for-the-badge&logo=truck&logoColor=white)]()
 
-## Setup
 
-### Initial setup
-1. Clone this repository to your local machine.
-2. Ensure [Docker](https://www.docker.com/) is installed and operational. Then, install `AlgoKit` following this [guide](https://github.com/algorandfoundation/algokit-cli#install).
-3. Run `algokit project bootstrap all` in the project directory. This command sets up your environment by installing necessary dependencies, setting up a Python virtual environment, and preparing your `.env` file.
-4. In the case of a smart contract project, execute `algokit generate env-file -a target_network localnet` from the `AlgoHealX-contracts` directory to create a `.env.localnet` file with default configuration for `localnet`.
-5. To build your project, execute `algokit project run build`. This compiles your project and prepares it for running.
-6. For project-specific instructions, refer to the READMEs of the child projects:
-   - Smart Contracts: [AlgoHealX-contracts](projects/AlgoHealX-contracts/README.md)
-   - Frontend Application: [AlgoHealX-frontend](projects/AlgoHealX-frontend/README.md)
+## 🔭 Overview
 
-> This project is structured as a monorepo, refer to the [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/features/project/run.md) to learn more about custom command orchestration via `algokit project run`.
+AlgoHealX is a next-generation blockchain-based medicine tracking system designed to eliminate counterfeit drugs and bring complete transparency to the pharmaceutical supply chain.
 
-### Subsequently
+Using **Algorand smart contracts**, AlgoHealX ensures that every stage of a medicine batch's journey is recorded immutably — from manufacturing ➝ regulatory approval ➝ distribution ➝ pharmacy delivery ➝ consumer verification.
 
-1. If you update to the latest source code and there are new dependencies, you will need to run `algokit project bootstrap all` again.
-2. Follow step 3 above.
+Every transaction is **tamper-proof**, **auditable**, and **verifiable**, making AlgoHealX a trusted solution for:
 
-## Tools
+- 🏭 **Manufacturers**
+- 🛂 **Regulators**
+- 🚚 **Distributors**
+- 👤 **Consumers**
 
-This project makes use of Python and React to build Algorand smart contracts and to provide a base project configuration to develop frontends for your Algorand dApps and interactions with smart contracts. The following tools are in use:
+With blockchain security and complete traceability, AlgoHealX aims to eliminate counterfeit medicines and bring **trust**, **safety**, and **transparency** to healthcare supply chains.
 
-- Algorand, AlgoKit, and AlgoKit Utils
-- Python dependencies including Poetry, Black, Ruff or Flake8, mypy, pytest, and pip-audit
-- React and related dependencies including AlgoKit Utils, Tailwind CSS, daisyUI, use-wallet, npm, jest, playwright, Prettier, ESLint, and Github Actions workflows for build validation
 
-### VS Code
+### 🚀 Features
 
-It has also been configured to have a productive dev experience out of the box in [VS Code](https://code.visualstudio.com/), see the [backend .vscode](./backend/.vscode) and [frontend .vscode](./frontend/.vscode) folders for more details.
+- **Immutable Records**: Every medicine batch is tracked on the Algorand blockchain
+- **Supply Chain Transparency**: Full visibility from manufacturing to consumer
+- **Counterfeit Prevention**: Verification system to detect fake medicines
+- **Multi-Stakeholder Access**: Role-based access for all supply chain participants
+- **Consumer Verification**: End users can verify medicine authenticity
 
-## Integrating with smart contracts and application clients
+#### 🔐 Security
 
-Refer to the [AlgoHealX-contracts](projects/AlgoHealX-contracts/README.md) folder for overview of working with smart contracts, [projects/AlgoHealX-frontend](projects/AlgoHealX-frontend/README.md) for overview of the React project and the [projects/AlgoHealX-frontend/contracts](projects/AlgoHealX-frontend/src/contracts/README.md) folder for README on adding new smart contracts from backend as application clients on your frontend. The templates provided in these folders will help you get started.
-When you compile and generate smart contract artifacts, your frontend component will automatically generate typescript application clients from smart contract artifacts and move them to `frontend/src/contracts` folder, see [`generate:app-clients` in package.json](projects/AlgoHealX-frontend/package.json). Afterwards, you are free to import and use them in your frontend application.
+AlgoHealX leverages Algorand's Pure Proof-of-Stake consensus mechanism to ensure:
 
-The frontend starter also provides an example of interactions with your AlgoHealxClient in [`AppCalls.tsx`](projects/AlgoHealX-frontend/src/components/AppCalls.tsx) component by default.
+- **High Security**: Cryptographic verification of all transactions
+- **Immutability**: Records cannot be altered or deleted
+- **Decentralization**: No single point of failure
+- **Fast Finality**: Transactions confirmed in seconds
 
-## Next Steps
 
-You can take this project and customize it to build your own decentralized applications on Algorand. Make sure to understand how to use AlgoKit and how to write smart contracts for Algorand before you start.
+### 🛠️ Technology Stack
+
+- **Blockchain**: Algorand
+- **Smart Contracts**: PyTeal
+- **Frontend**: React, TypeScript, Vite
+- **UI**: Tailwind CSS, shadcn/ui
+- **State Management**: TanStack Query
+
+---
+## 🛠️ Setup & Installation
+
+### **Prerequisites**
+Ensure these tools are installed:
+
+- AlgoKit CLI  
+- Docker (required for LocalNet)  
+- Node.js & npm  
+- Python 3.10+  
+
+### ⚙️ Initial Setup
+
+#### **1. Clone the Repository**
+```sh
+git clone https://github.com/nikshiptha2505/AlgoHealX.git
+```
+
+#### **2. Open Command Prompt in the Project Folder**
+
+#### **3. Start AlgoKit LocalNet**
+
+```sh
+algokit localnet start
+```
+
+#### **4. Install All Dependencies**
+
+```sh
+algokit project bootstrap all
+```
+
+#### **5. Build the Entire Project (Contracts + Frontend)**
+
+```sh
+algokit project build
+```
+
+### 🌐 Run the Frontend
+
+#### **6. Navigate to the Frontend Folder**
+
+```sh
+cd projects
+cd AlgoHealX-frontend
+```
+
+#### **7. Start the Development Server**
+
+```sh
+npm run dev
+```
+
+The website will be available at:
+
+👉 **[http://localhost:8080](http://localhost:8080)**
+
+---
+
+## 📱 Live Deployment
+
+Our smart contract is deployed and running on the **Algorand TestNet**:
+
+🔗 **Contract Address**: [View on Lora Explorer](https://lora.algokit.io/testnet/application/749652245)
+
+![AlgoHealX Smart Contract on Lora](./public/loraapp.jpg)
+
+---
+## 🏗️ Architecture & Components
+
+AlgoHealX is built on the **AlgoKit Fullstack Template**, providing a complete blockchain solution with the following architecture:
+
+### **Smart Contract Layer**
+- **Drug Batch Lifecycle Management**: Handles full lifecycle operations—registration, approval, transfer, delivery, and verification of a medicine batch on Algorand.
+- **Role-Based Access Control**: Enforces secure permissions for admin, producer, and regulator using on-chain sender checks.
+- **Batch Metadata Storage**: Stores immutable and updatable batch details such as batch ID, drug name, manufacturer, dates, quantity, compliance score, and verification history.
+- **Regulatory Authorization Workflow**: Enables regulators to approve, reject, or mark counterfeit, with proper audit timestamps and reasons.
+- **Transfer & Supply Chain Tracking**: Tracks every movement of the drug batch, including sender, receiver, location, transfer count, and delivery confirmation.
+- **QR & Authenticity Validation**: Stores a hash for QR verification, counts verification attempts, and enables authenticity checks across the supply chain.
+
+### **Frontend Application (React + TypeScript)**
+Located in `projects/AlgoHealX-frontend/`:
+- **User Interfaces**: Role-specific dashboards for manufacturers, regulators, distributors, pharmacies, and consumers
+- **Wallet Integration**: Connects to Algorand wallets for transaction signing
+- **Database Integration**: Supabase backend for user management and data persistence
+- **QR Code System**: Generates and verifies medicine batch QR codes
+- **Real-time Tracking**: Displays medicine journey across the supply chain
+
+### **Project Structure**
+```
+AlgoHealX/
+├── projects/
+│   ├── AlgoHealX-contracts/     # Python smart contracts
+│   └── AlgoHealX-frontend/      # React frontend application
+├── .algokit/                     # AlgoKit configuration
+└── .vscode/                      # Development environment settings
+```
+
+### **Key Technologies**
+- **Blockchain Platform**: Algorand (TestNet deployment)
+- **Smart Contract Language**: PyTeal
+- **Frontend Framework**: React 18.3.1 with TypeScript
+- **Backend & Database**: Supabase (PostgreSQL, Authentication, Storage)
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Build Tool**: Vite
+- **State Management**: TanStack Query
+
+
+### 🌐 Links
+
+Our Project deployed frontend link:
+
+- **Project URL**: [https://algohealx.netlify.app/](https://algohealx.netlify.app/)
+
+---
+### 📄 License
+
+This project is licensed under the MIT License.
+
+---
