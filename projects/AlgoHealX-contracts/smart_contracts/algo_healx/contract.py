@@ -89,3 +89,9 @@ class DrugBatchContract(ARC4Contract):
         self.transfer_count += UInt64(1)
         self.last_transfer_ts = Global.latest_timestamp
         self.status = String("in_transit")
+
+    @arc4.abimethod
+    def mark_delivered(self) -> None:
+        assert Txn.sender == self.receiver or Txn.sender == self.admin
+        self.status = String("delivered")
+        self.last_transfer_ts = Global.latest_timestamp
