@@ -60,4 +60,12 @@ class DrugBatchContract(ARC4Contract):
         assert Txn.sender == self.admin or Txn.sender == self.producer or Txn.sender == self.regulator
         self.status = status_text
         self.timestamp = Global.latest_timestamp
+    @arc4.abimethod
+    def approve(self, compliance_score: UInt64) -> None:
+        assert Txn.sender == self.regulator
+        self.reg_status = String("approved")
+        self.compliance_score = compliance_score
+        self.approval_ts = Global.latest_timestamp
+        self.status = String("approved")
+
 
