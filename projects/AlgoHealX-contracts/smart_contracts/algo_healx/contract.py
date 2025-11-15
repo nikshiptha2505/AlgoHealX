@@ -105,3 +105,10 @@ class DrugBatchContract(ARC4Contract):
         assert qr_hash == self.qr_hash
         self.verif_count += UInt64(1)
         self.last_verif_ts = Global.latest_timestamp
+    @arc4.abimethod
+    def mark_counterfeit(self) -> None:
+        assert Txn.sender == self.admin or Txn.sender == self.regulator
+        self.is_authentic = UInt64(0)
+        self.status = String("counterfeit")
+        self.last_verif_ts = Global.latest_timestamp
+
