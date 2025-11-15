@@ -55,3 +55,9 @@ class DrugBatchContract(ARC4Contract):
         self.quantity = quantity
         self.status = String("pending")
         self.timestamp = Global.latest_timestamp
+    @arc4.abimethod
+    def update_status(self, status_text: String) -> None:
+        assert Txn.sender == self.admin or Txn.sender == self.producer or Txn.sender == self.regulator
+        self.status = status_text
+        self.timestamp = Global.latest_timestamp
+
