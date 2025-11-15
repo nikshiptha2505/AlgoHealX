@@ -76,3 +76,16 @@ class DrugBatchContract(ARC4Contract):
         self.approval_ts = Global.latest_timestamp
         self.status = String("rejected")
 
+    @arc4.abimethod
+    def transfer(self, new_receiver: Account, location: String) -> None:
+        if self.transfer_count == UInt64(0):
+            assert Txn.sender == self.producer or Txn.sender == self.admin
+            self.sender = self.producer
+        else:
+            assert Txn.sender == self.sender or Txn.sender == self.admin
+            self.sender = self.receiver
+        self.receiver = new_receiver
+        self.current_location = location
+        self.transfer_count += UInt64(1)
+        self.last_transfer_ts = Global.latest_timestamp
+        self.status = String("in_transit")
