@@ -7,6 +7,8 @@ class DrugBatchContract(ARC4Contract):
         self.regulator = Account()
         self.batch_id = String()
         self.drug_name = String()
+
+
         self.manufacturer = String()
         self.manufacture_date = String()
         self.expiry_date = String()
@@ -21,6 +23,8 @@ class DrugBatchContract(ARC4Contract):
         self.receiver = Account()
         self.current_location = String()
         self.transfer_count = UInt64()
+
+
         self.last_transfer_ts = UInt64()
         self.verif_count = UInt64()
         self.is_authentic = UInt64(1)
